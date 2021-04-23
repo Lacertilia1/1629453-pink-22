@@ -1,7 +1,29 @@
+.information__lead {
+  .no__margin-padding();
+  padding: 50px 0;
+}
+
+.information__suptitle {
+  .no__margin-padding();
+  margin-bottom: 50px;
+}
+
+.information__title {
+  .no__margin-padding();
+}
+
+.information__text {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 300;
+}
+
 .information__features-list {
   position: relative;
 
   padding-bottom: 325px;
+
+  background-color: var(--grey);
 }
 
 .information__features-list::after {
@@ -16,4 +38,9 @@
 
   background-image: url("../../img/index__images/features-phone.jpg");
   background-repeat: no-repeat;
+}
+
+.information__features-item--title {
+  font-weight: 700;
+  color: var(--black);
 }
