@@ -1,0 +1,65 @@
+.intro {
+  position: relative;
+
+  background-color: var(--dark-blue);
+  background-image: url("../../img/index__images/back-mobile.jpg");
+  background-repeat: no-repeat;
+}
+
+.intro::after {
+  content: url("../../img/index__images/phone.png");
+
+  position: absolute;
+  top: 176px;
+  left: 0;
+}
+
+.intro__slogan {
+  .no__margin-padding();
+
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 300;
+
+  color: var(--white);
+}
+
+.intro__button {
+  margin-top: 50px;
+}
+
+.intro__link {
+  padding: 15px 44px;
+
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+
+  color: var(--white);
+
+  border: 3px solid var(--white);
+  border-radius: 29px;
+  box-sizing: border-box;
+}
+
+.intro__list {
+  .no__margin-padding();
+  margin-top: 50px;
+}
+
+.intro__item {
+  .no__list-style-type();
+}
+
+.intro__description {
+  .no__margin-padding();
+  padding: 35px 0;
+
+  font-weight: 300;
+
+  color: var(--white);
+}
+
+.intro__add-wrapper {
+  padding-top: 450px;
+}
