@@ -1,0 +1,38 @@
+.main-photo-block__picture {
+  position: relative;
+}
+
+.main-photo-block__picture::after {
+  content: "Панорама дня";
+
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  padding: 7px 17px;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  color: var(--white);
+  background-color: var(--pink);
+}
+
+.main-photo-block__item {
+  background-color: var(--grey);
+}
+
+.main-photo-block__review {
+  .no__margin-padding();
+}
+
+.main-photo-block__author {
+  font-weight: 700;
+  font-style: normal;
+}
+
+.main-photo-block__time {
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+}

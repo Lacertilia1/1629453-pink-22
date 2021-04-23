@@ -12,10 +12,10 @@
     <a class="page-header__logo" href="#">
       <img src="img/index__images/logo.svg" width="74" height="23" alt="Логотип Компании Пинк">
     </a>
+    <button class="page-header__toggle" type="button">
+      <span class="page-header__toggle-description visually-hidden">Открыть меню</span>
+    </button>
     <nav class="page-header__navigation">
-      <button class="page-header__toggle" type="button">
-        <span class="page-header__toggle-description visually-hidden">Открыть меню</span>
-      </button>
       <div class="page-header__wrapper">
         <ul class="page-header__list">
           <li class="page-header__item">
@@ -44,12 +44,12 @@
   </header>
 
   <main class="page-main">
-
-    <h1 class="page-main__heading">
-      Фотографии
-      пользователей
-    </h1>
-
+    <div class="page-main__heading-wrapper">
+      <h1 class="page-main__heading">
+        Фотографии
+        пользователей
+      </h1>
+    </div>
     <section class="main-photo-block">
       <div class="main-photo-block__wrapper">
 
@@ -57,7 +57,6 @@
 
         <div class="main-photo-block__item">
           <div class="main-photo-block__picture">
-            <span class="main-photo-block__content">Панорама дня</span>
             <a class="photos-list__fullscreen-link" href="#">
               <img src="img/catalog__images/catalog__main-photo.jpg" width="320" height="137"
                 alt="Фотография, сделанная на вершине моста. На фоне зеленый лес и небольшой поток автомобилей.">
@@ -302,8 +301,8 @@
               <input class="upload__range visually-hidden" id="contrast" name="contrast" type="range" min="0" max="100"
                 value="90" step="1">
             </div>
-            <button class="upload__button" type="submit">Запостить</button>
-            <button class="upload__button upload__button--disabled" type="reset" disabled>Отмена</button>
+            <button class="upload__button upload__post-button" type="submit">Запостить</button><br>
+            <button class="upload__button upload__discard-button" type="reset">Отмена</button>
           </form>
         </div>
 
