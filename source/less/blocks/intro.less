@@ -1,35 +1,48 @@
 .intro {
-  position: relative;
-
   background-color: var(--dark-blue);
-  background-image: url("../../img/index__images/back-mobile.jpg");
-  background-repeat: no-repeat;
 }
 
-.intro::after {
-  content: url("../../img/index__images/phone.png");
+.intro__add-wrapper {
+  min-height: 271px;
+  padding-top: 28px;
 
-  position: absolute;
-  top: 176px;
-  left: 0;
+  @media (min-width: @tablet-width) {
+    position: absolute;
+  }
 }
 
 .intro__slogan {
+  position: absolute;
+  bottom: 610px;
+
   .no__margin-padding();
 
   font-size: 24px;
   line-height: 29px;
   font-weight: 300;
+  text-align: center;
 
   color: var(--white);
-}
 
-.intro__button {
-  margin-top: 50px;
+  @media (min-width: @tablet-width) {
+    bottom: 300px;
+
+    width: 190px;
+
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 240px;
+
+    font-size: 50px;
+    line-height: 68px;
+  }
 }
 
 .intro__link {
-  padding: 15px 44px;
+  padding: 10px 35px;
 
   font-size: 18px;
   line-height: 18px;
@@ -42,9 +55,44 @@
   box-sizing: border-box;
 }
 
+.intro__list-wrapper {
+  position: relative;
+
+  min-height: 271px;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 600px;
+    left: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 300px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 420px;
+    left: auto;
+  }
+}
+
 .intro__list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+
   .no__margin-padding();
-  margin-top: 50px;
+  margin-bottom: 28px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 38px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 58px;
+  }
 }
 
 .intro__item {
@@ -53,13 +101,28 @@
 
 .intro__description {
   .no__margin-padding();
-  padding: 35px 0;
 
   font-weight: 300;
+  text-align: center;
 
   color: var(--white);
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+  }
 }
 
-.intro__add-wrapper {
-  padding-top: 450px;
+.intro__button {
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 32px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 46px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 67px;
+  }
 }
