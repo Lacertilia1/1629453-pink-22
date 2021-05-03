@@ -6,10 +6,50 @@
   padding-bottom: 30px;
 
   line-height: 30px;
+  text-align: center;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 490px;
+
+    font-size: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 756px;
+  }
+}
+
+.registration__text-add {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: inline;
+  }
+}
+
+.registration__form {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .registration__user-list {
   margin-bottom: 30px;
+}
+
+.registration__user-item {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+  }
 }
 
 .registration__user-input-label {
@@ -37,15 +77,30 @@
   border: none;
 
   background-color: var(--grey);
+
+  @media (min-width: @tablet-width) {
+    .container();
+
+    background-color: transparent;
+
+    order: 4;
+  }
 }
 
 .registration__achievements-list {
+  width: 200px;
   padding-top: 50px;
+  margin: 0 auto;
 
   line-height: 18px;
   text-transform: uppercase;
+  text-align: center;
 
   color: var(--pink);
+
+  @media (min-width: @tablet-width) {
+    width: auto;
+  }
 }
 
 .registration__achievements-input-label {
@@ -58,6 +113,19 @@
   padding: 30px 0;
 
   border: none;
+
+  @media (min-width: @tablet-width) {
+    order: 3;
+  }
+}
+
+.registration__contacts-item {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: column-reverse;
+  }
 }
 
 .registration__contacts-input-label {
@@ -86,6 +154,12 @@
   background-color: var(--grey);
 
   border: none;
+
+  @media (min-width: @tablet-width) {
+    background-color: transparent;
+
+    order: 2;
+  }
 }
 
 .registration_app-list {
@@ -93,8 +167,13 @@
 
   line-height: 30px;
   text-transform: uppercase;
+  text-align: center;
 
   color: var(--pink);
+
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+  }
 }
 
 .registration__app-input-label {
@@ -106,13 +185,19 @@
   .no__margin-padding();
 
   border: none;
+
+  @media (min-width: @tablet-width) {
+    order: 5;
+  }
 }
 
 .registration__emotions-title {
   padding-top: 30px;
+  margin: 0 auto;
 
   line-height: 18px;
   text-transform: uppercase;
+  text-align: center;
 
   color: var(--pink);
 }
@@ -133,6 +218,15 @@
   padding: 15px 53px;
 
   .button();
+}
+
+.registration__button-wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    order: 6;
+  }
 }
 
 .registration__required {

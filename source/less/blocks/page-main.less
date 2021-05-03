@@ -4,12 +4,27 @@
   background-color: var(--blue);
   background-image: url("../../img/index__images/back-mobile.jpg");
   background-repeat: no-repeat;
+  background-size: 100%;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../../img/index__images/back-tablet-form.jpg");
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../../img/index__images/back-desktop-form.jpg");
+  }
 }
 
 .page-main__heading {
   font-size: 24px;
   line-height: 32px;
   font-weight: 300;
+  text-align: center;
 
   color: var(--white);
+
+  @media (min-width: @tablet-width) {
+    font-size: 50px;
+    line-height: 68px;
+  }
 }
