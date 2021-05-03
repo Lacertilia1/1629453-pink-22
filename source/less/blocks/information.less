@@ -1,46 +1,216 @@
 .information__lead {
   .no__margin-padding();
-  padding: 50px 0;
+  padding-top: 50px;
+  .container();
 }
 
 .information__suptitle {
   .no__margin-padding();
-  margin-bottom: 50px;
+  margin-bottom: 10px;
+
+  @media (min-height: @desktop-width) {
+    width: 740px;
+  }
 }
 
 .information__title {
   .no__margin-padding();
+
+  @media (min-width: @tablet-width) {
+    width: 580px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 720px;
+  }
 }
 
 .information__text {
   font-size: 24px;
   line-height: 29px;
   font-weight: 300;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 40px;
+    line-height: 55px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 50px;
+    line-height: 68px;
+
+    margin: 0 auto;
+  }
+}
+
+.information__features-list-main-wrapper {
+  padding-top: 123px;
+  padding-bottom: 315px;
+
+  background-image: url("../../img/index__images/grey-background-mobile.png");
+  background-position: top 20px left;
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  overflow: hidden;
+
+  @media (min-width: @tablet-width) {
+    .no__margin-padding();
+
+    background-image: url("../../img/index__images/grey-background-tablet.png");
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../../img/index__images/grey-background-desktop.png");
+  }
 }
 
 .information__features-list {
   position: relative;
-
-  padding-bottom: 325px;
-
-  background-color: var(--grey);
 }
 
 .information__features-list::after {
   content: "";
 
   position: absolute;
-  bottom: 0;
-  left: 0;
+  top: 425px;
+  right: 26%;
 
   width: 157px;
   height: 320px;
 
   background-image: url("../../img/index__images/features-phone.jpg");
   background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    top: 47px;
+    left: 20px;
+
+    width: 268px;
+    height: 547px;
+
+    background-image: url("../../img/index__images/iphone-tablet.png");
+  }
+
+  @media (min-width: @desktop-width) {
+    content: none;
+  }
+}
+
+.information__features-list-wrapper {
+  @media (min-width: @tablet-width) {
+    padding-top: 120px;
+    padding-left: 330px;
+  }
+
+  @media (min-width: @desktop-width) {
+    .no__margin-padding();
+    padding-top: 120px;
+  }
+}
+
+.information__features-item-flex-wrapper {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 310px;
+  }
+}
+
+.information__features-item-wrapper {
+  position: relative;
+}
+
+.information__features-item-wrapper--first::before {
+  content: none;
+
+  @media (min-width: @desktop-width) {
+    content: "";
+
+    position: absolute;
+    bottom: 240px;
+    left: -30px;
+
+    width: 300px;
+    height: 301px;
+
+    background-image: url("../../img/index__images/iphone-1.png");
+    background-repeat: no-repeat;
+  }
+}
+
+.information__features-item-wrapper--second::before {
+  content: none;
+
+  @media (min-width: @desktop-width) {
+    content: "";
+
+    position: absolute;
+    bottom: 240px;
+    left: -30px;
+
+    width: 300px;
+    height: 301px;
+
+    background-image: url("../../img/index__images/iphone-2.png");
+    background-repeat: no-repeat;
+  }
+}
+
+.information__features-item-wrapper--third::before {
+  content: none;
+
+  @media (min-width: @desktop-width) {
+    content: "";
+
+    position: absolute;
+    bottom: 240px;
+    left: -30px;
+
+    width: 300px;
+    height: 301px;
+
+    background-image: url("../../img/index__images/iphone-3.png");
+    background-repeat: no-repeat;
+  }
+}
+
+.information__features-item {
+  width: 280px;
+
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    text-align: left;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 300px;
+    text-align: center;
+  }
 }
 
 .information__features-item--title {
+  font-size: 18px;
   font-weight: 700;
+
   color: var(--black);
+
+  @media (min-width: @desktop-width) {
+    width: 241px;
+
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+
+.information__features-item--description {
+  @media (min-width: @desktop-width) {
+    width: 238px;
+    margin: 0 auto;
+
+    font-size: 18px;
+    line-height: 30px;
+  }
 }

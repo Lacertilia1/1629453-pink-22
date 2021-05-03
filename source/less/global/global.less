@@ -26,6 +26,15 @@ img {
   height: auto;
 }
 
-.visually-hidden {
-  .visually-hidden();
+.container {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 620px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
+  }
 }

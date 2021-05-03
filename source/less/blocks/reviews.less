@@ -1,5 +1,34 @@
+.reviews__list {
+  position: relative;
+}
+
+.reviews__list::after {
+  content: none;
+
+  @media (min-width: @desktop-width) {
+    content: "";
+
+    position: absolute;
+    left: 431px;
+    top: 72px;
+
+    width: 79px;
+    height: 63px;
+
+    background-image: url("../../img/index__images/quotes.svg");
+    background-repeat: no-repeat;
+  }
+}
+
 .reviews__item {
   .no__margin-padding();
+  padding-top: 30px;
+
+  text-align: center;
+
+  @media (min-width: @desktop-width) {
+    padding-top: 200px;
+  }
 }
 
 .reviews__author-name {
@@ -9,8 +38,62 @@
   font-style: normal;
 
   color: var(--black);
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+
+    order: 2;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 24px;
+  }
+}
+
+.reviews__author-description {
+  display: none;
+
+  line-height: 30px;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+
+    order: 3;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+  }
 }
 
 .reviews__text {
   line-height: 30px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+
+    order: 1;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 688px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+  }
+}
+
+.reviews__toggles-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.reviews__toggles {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100px;
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }
