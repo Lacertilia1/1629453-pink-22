@@ -9,14 +9,12 @@
   background-position: center top 270px;
   background-repeat: no-repeat;
   background-size: 100% auto;
-  min-height: 729px;
 
   @media (min-width: @tablet-width) {
     background-image: url("../../img/index__images/back-tablet.jpg");
     background-position: center top 250px;
     background-repeat: no-repeat;
     background-size: 100% auto;
-    min-height: 989px;
   }
 
   @media (min-width: @desktop-width) {
@@ -25,11 +23,22 @@
     background-position: center top;
     background-repeat: no-repeat;
     background-size: 100% auto;
+  }
+}
+
+.page-header__pseudo-element {
+  min-height: 729px;
+
+  @media (min-width: @tablet-width) {
+    min-height: 989px;
+  }
+
+  @media (min-width: @desktop-width) {
     min-height: 853px;
   }
 }
 
-.page-header::after {
+.page-header__pseudo-element::after {
   content: "";
 
   position: absolute;

@@ -9,47 +9,55 @@
 
 <body class="page__body">
   <header class="page-header">
-    <a class="page-header__logo" href="#">
-      <img src="img/index__images/logo.svg" width="74" height="23" alt="Логотип Компании Пинк">
-    </a>
-    <button class="page-header__toggle" type="button">
-      <span class="page-header__toggle-description visually-hidden">Открыть меню</span>
-    </button>
-    <nav class="page-header__navigation">
-      <div class="page-header__wrapper">
-        <ul class="page-header__list">
-          <li class="page-header__item">
-            <a class="page-header__link" href="index.html">
-              Главная
-            </a>
-          </li>
-          <li class="page-header__item">
-            <a class="page-header__link" href="catalog.html">
-              Фотографии
-            </a>
-          </li>
-          <li class="page-header__item">
-            <a class="page-header__link" href="#">
-              Конкурс
-            </a>
-          </li>
-          <li class="page-header__item">
-            <a class="page-header__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-              Html academy
-            </a>
-          </li>
-        </ul>
+    <div class="page-header__desktop-nav-wrapper">
+      <div class="page-header__desktop-wrapper">
+        <div class="page-header__main-wrapper">
+          <a class="page-header__logo" href="index.html">
+            <span class="page-header__logo-description visually-hidden">Логотип компании Пинк</span>
+          </a>
+          <button class="page-header__toggle" type="button">
+            <span class="page-header__toggle-description visually-hidden">Открыть меню</span>
+          </button>
+        </div>
+        <nav class="page-header__navigation">
+          <div class="page-header__wrapper">
+            <ul class="page-header__list">
+              <li class="page-header__item">
+                <a class="page-header__link" href="index.html">
+                  Главная
+                </a>
+              </li>
+              <li class="page-header__item">
+                <a class="page-header__link" href="catalog.html">
+                  Фотографии
+                </a>
+              </li>
+              <li class="page-header__item">
+                <a class="page-header__link" href="#">
+                  Конкурс
+                </a>
+              </li>
+              <li class="page-header__item">
+                <a class="page-header__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+                  HTML Academy
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
-    </nav>
+    </div>
   </header>
 
   <main class="page-main">
     <div class="page-main__heading-wrapper">
-      <h1 class="page-main__heading">
-        Конкурс на самое
-        безбашенное
-        путешествие с Пинк
-      </h1>
+      <div class="page-main__container container">
+        <h1 class="page-main__heading">
+          Конкурс на самое
+          безбашенное
+          путешествие с Пинк
+        </h1>
+      </div>
     </div>
 
     <section class="registration">
@@ -57,10 +65,11 @@
 
         <h2 class="registration__heading visually-hidden">Регистрация вашего путешествия</h2>
 
-        <p class="registration__text">
+        <p class="registration__text container">
           Поделитесь своей историей и получите
           шанс выиграть ценный приз — 1000
           миль на вашу бонусную карту!
+          <span class="registration__text-add">Пожалуйста, заполните форму ниже:</span>
         </p>
         <form class="registration__form" method="get" action="https://echo.htmlacademy.ru" target="_blank">
           <div class="registration__user-list">
@@ -82,90 +91,105 @@
           </div>
 
           <fieldset class="registration__achievements">
-            <legend class="registration__achievements-list">
-              Ваши безбашенные
-              достижения в путешествии
-            </legend>
-            <div class="registration__achievements-item">
-              <input class="registration__achievements-input" type="checkbox" id="selfie" name="selfie" checked>
-              <label class="registration__achievements-input-label" for="selfie">Сделал селфи с акулой</label>
-            </div>
-            <div class="registration__achievements-item">
-              <input class="registration__achievements-input" type="checkbox" id="sunburnt" name="sunburnt" checked>
-              <label class="registration__achievements-input-label" for="sunburnt">Обгорел на пляже</label>
-            </div>
-            <div class="registration__achievements-item">
-              <input class="registration__achievements-input" type="checkbox" id="chuck" name="chuck">
-              <label class="registration__achievements-input-label" for="chuck">Видел Чака Норриса</label>
-            </div>
-            <div class="registration__achievements-item">
-              <input class="registration__achievements-input" type="checkbox" id="souvenir" name="souvenir">
-              <label class="registration__achievements-input-label" for="souvenir">Накупил сувениров</label>
-            </div>
-            <div class="registration__achievements-item">
-              <input class="registration__achievements-input" type="checkbox" id="defence" name="defence" checked>
-              <label class="registration__achievements-input-label" for="defence">Удержал башню</label>
-            </div>
-            <div class="registration__achievements-item">
-              <input class="registration__achievements-input" type="checkbox" id="hotel" name="hotel">
-              <label class="registration__achievements-input-label" for="hotel">Разгромил отель</label>
+            <div class="registration__achievements-wrapper container">
+              <legend class="registration__achievements-list">
+                Ваши безбашенные
+                достижения в путешествии
+              </legend>
+              <div class="registration__achievements-item-wrapper">
+                <div class="registration__achievements-item">
+                  <input class="registration__achievements-input" type="checkbox" id="selfie" name="selfie" checked>
+                  <label class="registration__achievements-input-label" for="selfie">Сделал селфи с акулой</label>
+                </div>
+                <div class="registration__achievements-item">
+                  <input class="registration__achievements-input" type="checkbox" id="sunburnt" name="sunburnt" checked>
+                  <label class="registration__achievements-input-label" for="sunburnt">Обгорел на пляже</label>
+                </div>
+                <div class="registration__achievements-item">
+                  <input class="registration__achievements-input" type="checkbox" id="chuck" name="chuck">
+                  <label class="registration__achievements-input-label" for="chuck">Видел Чака Норриса</label>
+                </div>
+                <div class="registration__achievements-item">
+                  <input class="registration__achievements-input" type="checkbox" id="souvenir" name="souvenir">
+                  <label class="registration__achievements-input-label" for="souvenir">Накупил сувениров</label>
+                </div>
+                <div class="registration__achievements-item">
+                  <input class="registration__achievements-input" type="checkbox" id="defence" name="defence" checked>
+                  <label class="registration__achievements-input-label" for="defence">Удержал башню</label>
+                </div>
+                <div class="registration__achievements-item">
+                  <input class="registration__achievements-input" type="checkbox" id="hotel" name="hotel">
+                  <label class="registration__achievements-input-label" for="hotel">Разгромил отель</label>
+                </div>
+              </div>
             </div>
           </fieldset>
 
           <fieldset class="registration__contacts">
-            <legend class="registration__contacts-list visually-hidden">Контактная информация</legend>
-            <div class="registration__contacts-item">
-              <label class="registration__contacts-input-label" for="contacts-list__phone-number">Номер телефона</label>
-              <input class="registration__contacts-input" type="tel" id="contacts-list__phone-number"
-                name="contacts-list__phone-number" placeholder="Номер, пожалуйста">
-            </div>
-            <div class="registration__contacts-item">
-              <label class="registration__contacts-input-label" for="contacts-list__email">Адрес почты</label>
-              <input class="registration__contacts-input" type="email" id="contacts-list__email"
-                name="contacts-list__email" placeholder="Введите почту *" required>
+            <div class="registration__contacts-wrapper container">
+              <legend class="registration__contacts-list">Контактная информация</legend>
+              <div class="registration__contacts-item-wrapper">
+                <div class="registration__contacts-item">
+                  <label class="registration__contacts-input-label" for="contacts-list__phone-number">Номер
+                    телефона</label>
+                  <input class="registration__contacts-input" type="tel" id="contacts-list__phone-number"
+                    name="contacts-list__phone-number" placeholder="Номер, пожалуйста">
+                </div>
+                <div class="registration__contacts-item">
+                  <label class="registration__contacts-input-label" for="contacts-list__email">Адрес почты</label>
+                  <input class="registration__contacts-input" type="email" id="contacts-list__email"
+                    name="contacts-list__email" placeholder="Введите почту *" required>
+                </div>
+              </div>
             </div>
           </fieldset>
 
           <fieldset class="registration__app">
-            <legend class="registration_app-list">
-              С каким приложением
-              путешествовали?
-            </legend>
-            <div class="registration__app-item">
-              <input class="registration__app-input" type="radio" id="app__ios" name="app-type" value="ios" checked>
-              <label class="registration__app-input-label" for="app__ios">Pink для iOS</label>
-            </div>
-            <div class="registration__app-item">
-              <input class="registration__app-input" type="radio" id="app__android" name="app-type" value="android">
-              <label class="registration__app-input-label" for="app__android">Pink на Android</label>
-            </div>
-            <div class="registration__app-item">
-              <input class="registration__app-input" type="radio" id="app__windows" name="app-type" value="windows">
-              <label class="registration__app-input-label" for="app__windows">Windows Phone</label>
+            <div class="registration__app-wrapper">
+              <legend class="registration_app-list">
+                С каким приложением
+                путешествовали?
+              </legend>
+              <div class="registration__app-item">
+                <input class="registration__app-input" type="radio" id="app__ios" name="app-type" value="ios" checked>
+                <label class="registration__app-input-label" for="app__ios">Pink для iOS</label>
+              </div>
+              <div class="registration__app-item">
+                <input class="registration__app-input" type="radio" id="app__android" name="app-type" value="android">
+                <label class="registration__app-input-label" for="app__android">Pink на Android</label>
+              </div>
+              <div class="registration__app-item">
+                <input class="registration__app-input" type="radio" id="app__windows" name="app-type" value="windows">
+                <label class="registration__app-input-label" for="app__windows">Windows Phone</label>
+              </div>
             </div>
           </fieldset>
 
           <fieldset class="registration__emotions">
-            <legend class="registration__emotions-title">
-              Опишите свои эмоции
-            </legend>
-            <p class="registration__emotions-wrapper">
-              <label class="registration__emotions-label visually-hidden" for="description"></label>
-              <textarea class="registration__emotions-textfield" id="description" name="description" rows="6" cols="25"
-                placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-            </p>
+            <div class="registration__emotions-wrapper container">
+              <legend class="registration__emotions-title">
+                Опишите свои эмоции
+              </legend>
+              <p class="registration__emotions-wrapper">
+                <label class="registration__emotions-label visually-hidden" for="description"></label>
+                <textarea class="registration__emotions-textfield" id="description" name="description" rows="6"
+                  cols="25" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+              </p>
+            </div>
           </fieldset>
-          <button class="registration__button" type="submit">Отправить форму</button>
-          <p class="registration__required">
-            <span class="registration__required--color">*</span> — обязательные поля
-          </p>
+          <div class="registration__button-wrapper container">
+            <button class="registration__button" type="submit">Отправить форму</button>
+            <p class="registration__required">
+              <span class="registration__required--color">*</span> — обязательные поля
+            </p>
+          </div>
         </form>
       </div>
     </section>
   </main>
 
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
+    <div class="page-footer__wrapper container">
 
       <h2 class="page-footer__heading visually-hidden">Социальные сети и авторские права</h2>
 
