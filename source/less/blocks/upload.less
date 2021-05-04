@@ -1,5 +1,18 @@
 .upload__subtitle {
   line-height: 30px;
+  text-align: center;
+}
+
+.upload__toggle-wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  width: 194px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: column;
+  }
 }
 
 .upload__post {
@@ -19,6 +32,13 @@
   border-radius: 30px;
 }
 
+.upload__post-wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .upload__post-button {
   padding: 16px 88px;
 }
@@ -30,4 +50,26 @@
   color: var(--blue);
 
   opacity: 0.1;
+}
+
+.upload__range--hidden {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
+.upload__toggle {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.upload__range--main {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }

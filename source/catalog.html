@@ -9,38 +9,44 @@
 
 <body class="page__body">
   <header class="page-header">
-    <a class="page-header__logo" href="#">
-      <img src="img/index__images/logo.svg" width="74" height="23" alt="Логотип Компании Пинк">
-    </a>
-    <button class="page-header__toggle" type="button">
-      <span class="page-header__toggle-description visually-hidden">Открыть меню</span>
-    </button>
-    <nav class="page-header__navigation">
-      <div class="page-header__wrapper">
-        <ul class="page-header__list">
-          <li class="page-header__item">
-            <a class="page-header__link" href="index.html">
-              Главная
-            </a>
-          </li>
-          <li class="page-header__item">
-            <a class="page-header__link" href="#">
-              Фотографии
-            </a>
-          </li>
-          <li class="page-header__item">
-            <a class="page-header__link" href="form.html">
-              Конкурс
-            </a>
-          </li>
-          <li class="page-header__item">
-            <a class="page-header__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-              Html academy
-            </a>
-          </li>
-        </ul>
+    <div class="page-header__desktop-nav-wrapper">
+      <div class="page-header__desktop-wrapper">
+        <div class="page-header__main-wrapper">
+          <a class="page-header__logo" href="index.html">
+            <span class="page-header__logo-description visually-hidden">Логотип компании Пинк</span>
+          </a>
+          <button class="page-header__toggle" type="button">
+            <span class="page-header__toggle-description visually-hidden">Открыть меню</span>
+          </button>
+        </div>
+        <nav class="page-header__navigation">
+          <div class="page-header__wrapper">
+            <ul class="page-header__list">
+              <li class="page-header__item">
+                <a class="page-header__link" href="index.html">
+                  Главная
+                </a>
+              </li>
+              <li class="page-header__item">
+                <a class="page-header__link" href="catalog.html">
+                  Фотографии
+                </a>
+              </li>
+              <li class="page-header__item">
+                <a class="page-header__link" href="#">
+                  Конкурс
+                </a>
+              </li>
+              <li class="page-header__item">
+                <a class="page-header__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+                  HTML Academy
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
-    </nav>
+    </div>
   </header>
 
   <main class="page-main">
@@ -55,39 +61,48 @@
 
         <h2 class="main-photo-block__heading visually-hidden">Главная фотография этого дня</h2>
 
+        <div class="main-photo-block__intro-wrapper">
+          <p class="main-photo-block__intro">
+            Взгляните на фотографии, которые выкладывают пользователи!
+            Видите, как не хватает ваших?
+          </p>
+        </div>
+
         <div class="main-photo-block__item">
           <div class="main-photo-block__picture">
             <a class="photos-list__fullscreen-link" href="#">
-              <img src="img/catalog__images/catalog__main-photo.jpg" width="320" height="137"
+              <img class="photos-list__image" src="img/catalog__images/catalog__main-photo.jpg" width="320" height="137"
                 alt="Фотография, сделанная на вершине моста. На фоне зеленый лес и небольшой поток автомобилей.">
             </a>
           </div>
-          <blockquote class="main-photo-block__review">
-            <cite class="main-photo-block__author">Анна</cite>
-            <span class="main-photo-block__time">(5 минут назад)</span>
-            <p class="main-photo-block__author-text">
-              Прыгать или нет? Напишите в
-              комментарии свой совет и
-              смотрите прямую трансляцию в
-              перископе, задавайте свои вопросы!
-            </p>
-          </blockquote>
-          <div class="main-photo-block__likes likes-block">
-            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M6.46867 12C6.3589 12.0014 6.25012 11.9798 6.14988 11.9367C6.04963 11.8935 5.96033 11.8298 5.88815 11.75C1.95926 7.42 1.03665 6.44 0.860416 6.17C0.307088 5.49497 0.00416162 4.66056 0 3.8C0.00441359 3.07425 0.223059 2.36473 0.63034 1.7545C1.03762 1.14428 1.61668 0.658598 2.29973 0.354328C2.98278 0.0500576 3.74155 -0.0602132 4.48721 0.036425C5.23287 0.133063 5.93456 0.432611 6.51014 0.9C7.22774 0.319491 8.13412 0.00090711 9.07066 0C10.1136 0.00264761 11.1129 0.404172 11.8494 1.11652C12.5859 1.82888 12.9995 2.79391 12.9995 3.8C13.014 4.67715 12.6845 5.5272 12.0769 6.18L7.03883 11.74C6.9678 11.8185 6.88016 11.8814 6.78182 11.9246C6.68348 11.9677 6.5767 11.99 6.46867 11.99V12ZM2.07329 5.28C2.29099 5.54 4.63381 8.12 6.46867 10.14L10.947 5.2C11.3073 4.81798 11.5005 4.3163 11.486 3.8C11.486 3.18205 11.2316 2.5894 10.7786 2.15244C10.3256 1.71548 9.71126 1.47 9.07066 1.47C8.69007 1.47297 8.31512 1.55909 7.97398 1.7219C7.63285 1.8847 7.33439 2.11996 7.10103 2.41C7.02566 2.49603 6.9321 2.56553 6.82661 2.61382C6.72113 2.66211 6.60615 2.68809 6.48941 2.69C6.37337 2.68847 6.25936 2.6605 6.15667 2.60836C6.05398 2.55622 5.96552 2.4814 5.89852 2.39C5.66784 2.10104 5.37087 1.86758 5.03093 1.70796C4.69099 1.54833 4.31732 1.46688 3.93926 1.47C3.48505 1.47534 3.04153 1.6036 2.65919 1.84016C2.27684 2.07673 1.97103 2.41211 1.77658 2.8081C1.58213 3.2041 1.50684 3.64481 1.5593 4.08006C1.61176 4.51531 1.78985 4.9276 2.07329 5.27V5.28Z"
-                fill="#D22856" />
-            </svg>
-            <p class="likes-block__text">
-              Нравится: 215
-            </p>
+          <div class="main-photo-block__review-wrapper container">
+            <blockquote class="main-photo-block__review">
+              <cite class="main-photo-block__author">Анна</cite>
+              <span class="main-photo-block__time">(5 минут назад)</span>
+              <p class="main-photo-block__author-text">
+                Прыгать или нет? Напишите в
+                комментарии свой совет и
+                смотрите прямую трансляцию в
+                перископе, задавайте свои вопросы!
+              </p>
+            </blockquote>
+            <div class="main-photo-block__likes likes-block">
+              <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M6.46867 12C6.3589 12.0014 6.25012 11.9798 6.14988 11.9367C6.04963 11.8935 5.96033 11.8298 5.88815 11.75C1.95926 7.42 1.03665 6.44 0.860416 6.17C0.307088 5.49497 0.00416162 4.66056 0 3.8C0.00441359 3.07425 0.223059 2.36473 0.63034 1.7545C1.03762 1.14428 1.61668 0.658598 2.29973 0.354328C2.98278 0.0500576 3.74155 -0.0602132 4.48721 0.036425C5.23287 0.133063 5.93456 0.432611 6.51014 0.9C7.22774 0.319491 8.13412 0.00090711 9.07066 0C10.1136 0.00264761 11.1129 0.404172 11.8494 1.11652C12.5859 1.82888 12.9995 2.79391 12.9995 3.8C13.014 4.67715 12.6845 5.5272 12.0769 6.18L7.03883 11.74C6.9678 11.8185 6.88016 11.8814 6.78182 11.9246C6.68348 11.9677 6.5767 11.99 6.46867 11.99V12ZM2.07329 5.28C2.29099 5.54 4.63381 8.12 6.46867 10.14L10.947 5.2C11.3073 4.81798 11.5005 4.3163 11.486 3.8C11.486 3.18205 11.2316 2.5894 10.7786 2.15244C10.3256 1.71548 9.71126 1.47 9.07066 1.47C8.69007 1.47297 8.31512 1.55909 7.97398 1.7219C7.63285 1.8847 7.33439 2.11996 7.10103 2.41C7.02566 2.49603 6.9321 2.56553 6.82661 2.61382C6.72113 2.66211 6.60615 2.68809 6.48941 2.69C6.37337 2.68847 6.25936 2.6605 6.15667 2.60836C6.05398 2.55622 5.96552 2.4814 5.89852 2.39C5.66784 2.10104 5.37087 1.86758 5.03093 1.70796C4.69099 1.54833 4.31732 1.46688 3.93926 1.47C3.48505 1.47534 3.04153 1.6036 2.65919 1.84016C2.27684 2.07673 1.97103 2.41211 1.77658 2.8081C1.58213 3.2041 1.50684 3.64481 1.5593 4.08006C1.61176 4.51531 1.78985 4.9276 2.07329 5.27V5.28Z"
+                  fill="#D22856" />
+              </svg>
+              <p class="likes-block__text">
+                Нравится: 215
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <section class="photos-list">
-      <div class="photos-list__wrapper">
+      <div class="photos-list__wrapper container">
 
         <h2 class="photos-list__heading visually-hidden">Лента с фотографиями и комментариями от пользователей</h2>
 
@@ -244,74 +259,86 @@
 
         <h2 class="upload__heading visually-hidden">Загрузите свою фотографию и сделайте пост</h2>
 
-        <p class="upload__subtitle">
-          Затмите их всех!
-          Выкладывайте все, что накопилось в
-          телефоне!
-        </p>
+        <div class="upload__subtitle-wrapper container">
+          <p class="upload__subtitle">
+            Затмите их всех!
+            Выкладывайте все, что накопилось в
+            телефоне!
+          </p>
+        </div>
 
 
         <div class="upload__post">
-          <img src="img/catalog__images/catalog__winter-photo.png" width="280" height="374"
-            alt="Фотография зимней дороги. На фоне лес и восход.">
+          <div class="upload__post-wrapper container">
+            <img src="img/catalog__images/catalog__winter-photo.png" width="280" height="374"
+              alt="Фотография зимней дороги. На фоне лес и восход.">
 
-          <form class="upload__form" method="get" action="https://echo.htmlacademy.ru" target="_blank">
-            <div class="upload__toggle">
-              <label class="upload__icon" for="crop">
-                <span class="visually-hidden">Ползунок для обрезания фотографии</span>
-                <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M32 28H36V12C36 10.9391 35.5786 9.92172 34.8284 9.17157C34.0783 8.42143 33.0609 8 32 8H16V12H32V28ZM12 32V0H8V8H0V12H8V32C8 33.0609 8.42143 34.0783 9.17157 34.8284C9.92172 35.5786 10.9391 36 12 36H32V44H36V36H44V32H12Z"
-                    fill="#D22856" />
-                </svg>
-              </label>
-              <input class="upload__range" id="crop" name="crop" type="range" min="0" max="100" value="90" step="1">
-            </div>
+            <form class="upload__form" method="get" action="https://echo.htmlacademy.ru" target="_blank">
+              <div class="upload__toggle-wrapper">
+                <div class="upload__toggle">
+                  <label class="upload__icon" for="crop">
+                    <span class="visually-hidden">Ползунок для обрезания фотографии</span>
+                    <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M32 28H36V12C36 10.9391 35.5786 9.92172 34.8284 9.17157C34.0783 8.42143 33.0609 8 32 8H16V12H32V28ZM12 32V0H8V8H0V12H8V32C8 33.0609 8.42143 34.0783 9.17157 34.8284C9.92172 35.5786 10.9391 36 12 36H32V44H36V36H44V32H12Z"
+                        fill="#D22856" />
+                    </svg>
+                  </label>
+                  <input class="upload__range upload__range--hidden" id="crop" name="crop" type="range" min="0" max="100"
+                    value="90" step="1">
+                </div>
 
-            <div class="upload__toggle">
-              <label class="upload__icon" for="fill">
-                <span class="visually-hidden">Ползунок наполнения фотографии</span>
-                <svg width="48" height="43" viewBox="0 0 48 43" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g opacity="0.3">
-                    <path
-                      d="M33.12 17.88L15.24 0L12.41 2.83L17.17 7.59L6.88 17.88C6.3182 18.4425 6.00264 19.205 6.00264 20C6.00264 20.795 6.3182 21.5575 6.88 22.12L17.88 33.12C18.4425 33.6818 19.205 33.9974 20 33.9974C20.795 33.9974 21.5575 33.6818 22.12 33.12L33.12 22.12C33.6818 21.5575 33.9974 20.795 33.9974 20C33.9974 19.205 33.6818 18.4425 33.12 17.88ZM10.41 20L20 10.42L29.59 20H10.41ZM38 23C38 23 34 27.33 34 30C34 31.0609 34.4214 32.0783 35.1716 32.8284C35.9217 33.5786 36.9391 34 38 34C39.0609 34 40.0783 33.5786 40.8284 32.8284C41.5786 32.0783 42 31.0609 42 30C42 27.33 38 23 38 23Z"
-                      fill="#283645" />
-                    <path d="M48 40H0V43H48V40Z" fill="#283645" />
-                  </g>
-                </svg>
-              </label>
-              <input class="upload__range visually-hidden" id="fill" name="fill" type="range" min="0" max="100"
-                value="10" step="1">
-            </div>
+                <div class="upload__toggle">
+                  <label class="upload__icon" for="fill">
+                    <span class="visually-hidden">Ползунок наполнения фотографии</span>
+                    <svg width="48" height="43" viewBox="0 0 48 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g opacity="0.3">
+                        <path
+                          d="M33.12 17.88L15.24 0L12.41 2.83L17.17 7.59L6.88 17.88C6.3182 18.4425 6.00264 19.205 6.00264 20C6.00264 20.795 6.3182 21.5575 6.88 22.12L17.88 33.12C18.4425 33.6818 19.205 33.9974 20 33.9974C20.795 33.9974 21.5575 33.6818 22.12 33.12L33.12 22.12C33.6818 21.5575 33.9974 20.795 33.9974 20C33.9974 19.205 33.6818 18.4425 33.12 17.88ZM10.41 20L20 10.42L29.59 20H10.41ZM38 23C38 23 34 27.33 34 30C34 31.0609 34.4214 32.0783 35.1716 32.8284C35.9217 33.5786 36.9391 34 38 34C39.0609 34 40.0783 33.5786 40.8284 32.8284C41.5786 32.0783 42 31.0609 42 30C42 27.33 38 23 38 23Z"
+                          fill="#283645" />
+                        <path d="M48 40H0V43H48V40Z" fill="#283645" />
+                      </g>
+                    </svg>
+                  </label>
+                  <input class="upload__range upload__range--hidden" id="fill" name="fill" type="range" min="0" max="100"
+                    value="10" step="1">
+                </div>
 
-            <div class="upload__toggle">
-              <label class="upload__icon" for="contrast">
-                <span class="visually-hidden">Ползунок контраста фотографии</span>
-                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g opacity="0.3">
-                    <path
-                      d="M16 4C18.3734 4 20.6935 4.70379 22.6669 6.02236C24.6402 7.34094 26.1783 9.21509 27.0866 11.4078C27.9948 13.6005 28.2325 16.0133 27.7694 18.3411C27.3064 20.6689 26.1635 22.8071 24.4853 24.4853C22.8071 26.1635 20.6689 27.3064 18.3411 27.7694C16.0133 28.2324 13.6005 27.9948 11.4078 27.0866C9.21509 26.1783 7.34095 24.6402 6.02237 22.6668C4.70379 20.6935 4.00001 18.3734 4.00001 16C4.00001 12.8174 5.26429 9.76515 7.51473 7.51472C9.76516 5.26428 12.8174 4 16 4ZM16 0C12.8355 0 9.74207 0.938384 7.11088 2.69649C4.4797 4.45459 2.42894 6.95345 1.21793 9.87706C0.0069325 12.8007 -0.309921 16.0177 0.307443 19.1214C0.924806 22.2251 2.44866 25.0761 4.6863 27.3137C6.92394 29.5513 9.77487 31.0752 12.8786 31.6926C15.9823 32.3099 19.1993 31.9931 22.1229 30.7821C25.0466 29.5711 27.5454 27.5203 29.3035 24.8891C31.0616 22.2579 32 19.1645 32 16C32 11.7565 30.3143 7.68687 27.3137 4.68629C24.3131 1.68571 20.2435 0 16 0Z"
-                      fill="#283645" />
-                    <path
-                      d="M16 24.29C18.1536 24.1422 20.1708 23.1824 21.644 21.6046C23.1172 20.0268 23.9366 17.9486 23.9366 15.79C23.9366 13.6314 23.1172 11.5532 21.644 9.97538C20.1708 8.39759 18.1536 7.43782 16 7.29"
-                      fill="#283645" />
-                  </g>
-                </svg>
-              </label>
-              <input class="upload__range visually-hidden" id="contrast" name="contrast" type="range" min="0" max="100"
-                value="90" step="1">
-            </div>
-            <button class="upload__button upload__post-button" type="submit">Запостить</button><br>
-            <button class="upload__button upload__discard-button" type="reset">Отмена</button>
-          </form>
+                <div class="upload__toggle">
+                  <label class="upload__icon" for="contrast">
+                    <span class="visually-hidden">Ползунок контраста фотографии</span>
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g opacity="0.3">
+                        <path
+                          d="M16 4C18.3734 4 20.6935 4.70379 22.6669 6.02236C24.6402 7.34094 26.1783 9.21509 27.0866 11.4078C27.9948 13.6005 28.2325 16.0133 27.7694 18.3411C27.3064 20.6689 26.1635 22.8071 24.4853 24.4853C22.8071 26.1635 20.6689 27.3064 18.3411 27.7694C16.0133 28.2324 13.6005 27.9948 11.4078 27.0866C9.21509 26.1783 7.34095 24.6402 6.02237 22.6668C4.70379 20.6935 4.00001 18.3734 4.00001 16C4.00001 12.8174 5.26429 9.76515 7.51473 7.51472C9.76516 5.26428 12.8174 4 16 4ZM16 0C12.8355 0 9.74207 0.938384 7.11088 2.69649C4.4797 4.45459 2.42894 6.95345 1.21793 9.87706C0.0069325 12.8007 -0.309921 16.0177 0.307443 19.1214C0.924806 22.2251 2.44866 25.0761 4.6863 27.3137C6.92394 29.5513 9.77487 31.0752 12.8786 31.6926C15.9823 32.3099 19.1993 31.9931 22.1229 30.7821C25.0466 29.5711 27.5454 27.5203 29.3035 24.8891C31.0616 22.2579 32 19.1645 32 16C32 11.7565 30.3143 7.68687 27.3137 4.68629C24.3131 1.68571 20.2435 0 16 0Z"
+                          fill="#283645" />
+                        <path
+                          d="M16 24.29C18.1536 24.1422 20.1708 23.1824 21.644 21.6046C23.1172 20.0268 23.9366 17.9486 23.9366 15.79C23.9366 13.6314 23.1172 11.5532 21.644 9.97538C20.1708 8.39759 18.1536 7.43782 16 7.29"
+                          fill="#283645" />
+                      </g>
+                    </svg>
+                  </label>
+                  <input class="upload__range upload__range--hidden" id="contrast" name="contrast" type="range" min="0"
+                    max="100" value="90" step="1">
+                </div>
+              </div>
+
+              <div class="upload__range-main-wrapper">
+                <input class="upload__range upload__range--main" id="fill" name="fill" type="range" min="0" max="100"
+                  value="10" step="1">
+              </div>
+
+              <button class="upload__button upload__post-button" type="submit">Запостить</button><br>
+              <button class="upload__button upload__discard-button" type="reset">Отмена</button>
+            </form>
+          </div>
         </div>
-
       </div>
     </section>
   </main>
 
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
+    <div class="page-footer__wrapper container">
 
       <h2 class="page-footer__heading visually-hidden">Социальные сети и авторские права</h2>
 
