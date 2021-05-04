@@ -1,3 +1,15 @@
+.main-photo-block__intro {
+  width: 250px;
+  margin: 0 auto;
+
+  line-height: 30px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    width: 360px;
+  }
+}
+
 .main-photo-block__picture {
   position: relative;
 }
@@ -18,12 +30,14 @@
   background-color: var(--pink);
 }
 
-.main-photo-block__item {
+.main-photo-block__review-wrapper {
+  margin-top: 0;
+
   background-color: var(--grey);
 }
 
 .main-photo-block__review {
-  .no__margin-padding();
+  margin-top: 0;
 }
 
 .main-photo-block__author {

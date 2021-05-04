@@ -1,4 +1,26 @@
+.photos-list__wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.photos-list__image {
+  width: 100%;
+}
+
 .photos-list__item {
+  margin-top: 20px;
+
+  background-color: var(--grey);
+
+  @media (min-width: @tablet-width) {
+    width: 300px;
+  }
+}
+
+.photos-list__review-wrapper {
   background-color: var(--grey);
 }
 
