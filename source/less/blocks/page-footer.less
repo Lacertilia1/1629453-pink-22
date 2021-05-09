@@ -1,6 +1,15 @@
 .page-footer {
   .no__margin-padding();
-  padding: 20px 0;
+  padding-top: 37px;
+
+  @media (min-width: @tablet-width) {
+    .no__margin-padding();
+    padding-top: 36px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 70px;
+  }
 }
 
 .page-footer__wrapper {
@@ -17,36 +26,80 @@
 .page-footer__logo-wrapper {
   width: 145px;
   height: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 38px;
+}
 
-  background-image: url("../../img/index__images/logotype-blue-tablet.svg");
-
-  @media (min-width: @tablet-width) {
-    .no__margin-padding();
+.page-footer__logo {
+  &:hover .page-footer__logo-path {
+    fill: var(--pink);
   }
 
-  @media (min-width: @desktop-width) {
-    width: 147px;
+  &:active {
+    opacity: 0.3;
+  }
 
-    background-image: url("../../img/index__images/logotype-pink-desktop.svg");
+  &:active .page-footer__logo-path {
+    fill: var(--black);
   }
 }
 
 .page-footer__list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
 
-  width: 178px;
+  width: 180px;
+  min-height: 54px;
   .no__margin-padding();
-  margin-bottom: 30px;
+  margin-bottom: 38px;
 
   @media (min-width: @tablet-width) {
     .no__margin-padding();
+    margin-right: 16px;
+    margin-top: -24px;
   }
 }
 
 .page-footer__item {
   .no__list-style-type();
+
+  height: 48px;
+  width: 48px;
+
+  border: 3px solid var(--blue-with-opacity);
+  border-radius: 50%;
+
+  &:hover {
+    border: 3px solid var(--blue);
+  }
+
+  &:active {
+    border: 3px solid var(--blue-with-opacity);
+  }
+
+  &:active .page-footer__item-image {
+    opacity: 0.3;
+  }
+}
+
+.page-footer__item-link {
+  position: relative;
+}
+
+.page-footer__item-link--twitter {
+  top: 14px;
+  left: 16px;
+}
+
+.page-footer__item-link--facebook {
+  top: 15px;
+  left: 20px;
+}
+
+.page-footer__item-link--youtube {
+  top: 14px;
+  left: 18px;
 }
 
 .page-footer__copyright-wrapper {
@@ -54,8 +107,38 @@
   justify-content: space-between;
 
   width: 130px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 17px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+    right: 10px;
+  }
 }
 
 .page-footer__text {
+  margin: 0;
+  margin-top: 9px;
   line-height: 18px;
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+    right: 13px;
+
+    margin-top: 6px;
+
+    font-size: 18px;
+  }
+}
+
+.page-footer__academy-logo {
+  &:hover path {
+    fill: var(--blue);
+  }
+
+  &:active path {
+    fill-opacity: 0.3;
+  }
 }

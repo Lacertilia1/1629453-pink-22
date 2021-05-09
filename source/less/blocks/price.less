@@ -1,7 +1,44 @@
 .price {
-  background-color: var(--grey);
+  padding-top: 126px;
+
+  background-image: url("../../img/index__images/grey-background-table.png");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover;
+
+  overflow-x: hidden;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 98px;
+    padding-bottom: 67px;
+
+    background-position: top -51px left;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 171px;
+    padding-bottom: 95px;
+
+    background-image: url("../../img/index__images/background-desktop.svg");
+    background-position: top 11px left;
+  }
 }
 
 .price__wrapper {
-  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.price__toggles {
+  display: flex;
+  justify-content: space-between;
+
+  width: 59px;
+  margin-bottom: 46px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }

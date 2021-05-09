@@ -32,3 +32,23 @@
     line-height: 68px;
   }
 }
+
+.page-main__br {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: inline;
+  }
+}
+
+.page-main__br--desktop {
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.page-main__br-no-tablet {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}

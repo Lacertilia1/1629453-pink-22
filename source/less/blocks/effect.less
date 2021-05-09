@@ -17,10 +17,12 @@
 .effect__wrapper {
   width: 310px;
   margin-left: auto;
-  padding-top: 100px;
+  padding-top: 96px;
   padding-bottom: 110px;
 
   @media (min-width: @desktop-width) {
+    padding-top: 122px;
+    margin-left: 370px;
     width: 534px;
   }
 }
@@ -29,7 +31,7 @@
   content: "";
 
   position: absolute;
-  top: 60px;
+  top: 54px;
   left: 0;
 
   width: 238px;
@@ -37,11 +39,20 @@
 
   background-image: url("../../img/index__images/timer-tablet.svg");
   background-repeat: no-repeat;
+
+  @media (min-width: @desktop-width) {
+    top: 27px;
+
+    width: 298px;
+    height: 345px;
+
+    background-image: url("../../img/index__images/timer-desktop.svg");
+  }
 }
 
 .effect__heading {
   .no__margin-padding();
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   width: 209px;
 
   font-size: 30px;
@@ -51,6 +62,7 @@
   color: var(--black);
 
   @media (min-width: @desktop-width) {
+    margin-bottom: 25px;
     width: 300px;
 
     line-height: 30px;
@@ -58,7 +70,16 @@
 }
 
 .effect__text {
+  .no__margin-padding();
+  margin-bottom: 10px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 9px;
+  }
+
   @media (min-width: @desktop-width) {
+    margin-bottom: 32px;
+
     font-size: 18px;
     line-height: 30px;
   }
@@ -68,6 +89,21 @@
   text-decoration: underline;
 
   color: var(--pink);
+
+  cursor: pointer;
+
+  &:hover {
+    color: var(--blue);
+    text-decoration-color: var(--blue);
+  }
+
+  &:active {
+    color: var(--blue);
+
+    text-decoration: none;
+
+    opacity: 0.3;
+  }
 
   @media (min-width: @desktop-width) {
     font-size: 18px;
