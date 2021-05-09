@@ -3,17 +3,21 @@
 }
 
 .intro__add-wrapper {
-  min-height: 271px;
+  min-height: 243px;
   padding-top: 28px;
 
   @media (min-width: @tablet-width) {
     position: absolute;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 34px;
+  }
 }
 
 .intro__slogan {
   position: absolute;
-  bottom: 610px;
+  bottom: 586px;
 
   .no__margin-padding();
 
@@ -25,7 +29,7 @@
   color: var(--white);
 
   @media (min-width: @tablet-width) {
-    bottom: 300px;
+    bottom: 274px;
 
     width: 190px;
 
@@ -42,7 +46,7 @@
 }
 
 .intro__link {
-  padding: 10px 35px;
+  padding: 15px 35px;
 
   font-size: 18px;
   line-height: 18px;
@@ -53,6 +57,25 @@
   border: 3px solid var(--white);
   border-radius: 29px;
   box-sizing: border-box;
+
+  &:hover {
+    color: var(--pink);
+    background-color: var(--white);
+  }
+
+  &:active {
+    color: var(--pink-with-opacity);
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 15px 45px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 15px 28px;
+
+    font-size: 21px;
+  }
 }
 
 .intro__list-wrapper {
@@ -62,7 +85,7 @@
 
   @media (min-width: @tablet-width) {
     position: absolute;
-    top: 600px;
+    top: 605px;
     left: 20px;
 
     display: flex;
@@ -73,8 +96,24 @@
   }
 
   @media (min-width: @desktop-width) {
-    top: 420px;
+    top: 416px;
     left: auto;
+  }
+}
+
+.intro__list-wrapper--closed {
+  @media (min-width: @tablet-width) {
+    top: 349px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 416px;
+  }
+}
+
+.intro__list-wrapper--opened {
+  @media (min-width: @tablet-width) {
+    top: 605px;
   }
 }
 
@@ -84,14 +123,14 @@
   align-items: baseline;
 
   .no__margin-padding();
-  margin-bottom: 28px;
+  margin-bottom: 17px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 38px;
+    margin-bottom: 28px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 58px;
+    margin-bottom: 46px;
   }
 }
 
@@ -112,14 +151,61 @@
   }
 }
 
+.intro__item-image {
+  &:hover {
+    fill-opacity: 0.6;
+  }
+
+  &:active {
+    fill-opacity: 0.3;
+  }
+}
+
+.intro__item--apple {
+  position: relative;
+  top: 3px;
+  left: 1px;
+
+  @media (min-width: @tablet-width) {
+    left: 4px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 1px;
+    left: 5px;
+  }
+}
+
+.intro__item--android {
+  @media (min-width: @tablet-width) {
+    position: relative;
+    left: -2px;
+  }
+}
+
+.intro__item--microsoft {
+  position: relative;
+  right: 2px;
+
+  @media (min-width: @tablet-width) {
+    right: 8px;
+    top: -5px;
+  }
+
+  @media (min-width: @tablet-width) {
+    top: -2px;
+    left: -6px;
+  }
+}
+
 .intro__button {
   display: flex;
   justify-content: center;
 
-  margin-bottom: 32px;
+  margin-bottom: 30px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 46px;
+    margin-bottom: 44px;
   }
 
   @media (min-width: @desktop-width) {
