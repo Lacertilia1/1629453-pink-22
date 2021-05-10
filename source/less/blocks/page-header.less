@@ -1,3 +1,5 @@
+// Page-header.less
+
 .page__body {
   @media (min-width: @tablet-width) {
     min-width: 660px;
@@ -138,6 +140,18 @@
   }
 }
 
+.page-header__toggle--no-js {
+  display: none;
+}
+
+.page-header__toggle--js {
+  display: block;
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
 .page-header__toggle-image {
   &:hover path {
     fill: var(--pink);
@@ -255,6 +269,10 @@
     width: 100%;
 
     background-color: var(--white);
+  }
+
+  @media (min-width: @desktop-width) {
+    bottom: -11px;
   }
 }
 

@@ -1,0 +1,113 @@
+// Input.less
+
+.registration__user-input-label {
+  padding-left: 23px;
+  margin-bottom: 6px;
+
+  line-height: 30px;
+
+  color: var(--pink);
+
+  @media (min-width: @tablet-width) {
+    align-self: center;
+
+    padding-left: 0;
+    margin-top: 7px;
+    margin-right: 19px;
+  }
+}
+
+.registration__user-input {
+  padding-top: 22px;
+  padding-right: 20px;
+  padding-bottom: 22px;
+  padding-left: 20px;
+
+  border: 2px solid var(--light-grey);
+  border-radius: 1px;
+
+  &::placeholder {
+    font-size: 18px;
+    line-height: 30px;
+
+    color: var(--blue);
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
+}
+
+.registration__contacts-input--phone {
+  @media (min-width: @tablet-width) {
+    background-image: url("../../img/index__images/input-phone.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: contain;
+  }
+}
+
+.registration__contacts-input--email {
+  @media (min-width: @tablet-width) {
+    background-image: url("../../img/index__images/email-input.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: contain;
+  }
+}
+
+.registration__contacts-input-label {
+  padding-left: 23px;
+  margin-bottom: 6px;
+
+  line-height: 30px;
+  text-transform: uppercase;
+
+  color: var(--pink);
+
+  @media (min-width: @tablet-width) {
+    padding-left: 19px;
+  }
+}
+
+.registration__contacts-input {
+  padding-top: 22px;
+  padding-right: 1px;
+  padding-bottom: 22px;
+  padding-left: 20px;
+
+  border: 2px solid var(--light-grey);
+  border-radius: 1px;
+
+  &::placeholder {
+    font-size: 18px;
+    line-height: 30px;
+
+    color: var(--blue);
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 477px;
+    margin-bottom: 8px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 350px;
+  }
+}
+
+.registration__user-item:hover .registration__user-input {
+  border-color: var(--blue);
+}
+
+.registration__user-input:active {
+  border-color: var(--pink);
+}
+
+.registration__contacts-item:hover .registration__contacts-input {
+  border-color: var(--blue);
+}
+
+.registration__contacts-input:active {
+  border-color: var(--pink);
+}

@@ -47,6 +47,19 @@
 
   border: none;
   border-radius: 1px;
+
+  &:hover {
+    background-color: var(--green-hover);
+  }
+
+  &:active {
+    color: var(--button-white-with-opacity);
+  }
+
+  &:disabled {
+    color: var(--white);
+    background-color: var(--light-grey);
+  }
 }
 
 .visually-hidden {
