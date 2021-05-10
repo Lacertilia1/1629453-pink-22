@@ -1,15 +1,21 @@
 .registration {
-  padding-top: 50px;
+  padding-top: 45px;
+  margin-bottom: 5px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 91px;
+  }
 }
 
 .registration__text {
-  padding-bottom: 30px;
+  padding-bottom: 34px;
 
   line-height: 30px;
   text-align: center;
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
+    margin-bottom: 38px;
     width: 490px;
 
     font-size: 18px;
@@ -49,15 +55,29 @@
 
 .registration__user-list {
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   width: 280px;
 
   @media (min-width: @tablet-width) {
+    margin-bottom: 19px;
     width: 620px;
   }
 
   @media (min-width: @desktop-width) {
+    padding-top: 15px;
+    margin-left: 0;
     width: 435px;
+  }
+}
+
+.registration__app-item-wrapper {
+  @media (min-width: @tablet-width) {
+    margin-top: 43px;
+    margin-left: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 74px;
   }
 }
 
@@ -65,8 +85,12 @@
   display: flex;
   flex-direction: column;
 
+  margin-bottom: 15px;
+
   @media (min-width: @tablet-width) {
     flex-direction: row;
+
+    margin-bottom: 51px;
   }
 
   @media (min-width: @desktop-width) {
@@ -74,15 +98,45 @@
   }
 }
 
+.registration__user-item:last-of-type {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
 .registration__user-input-label {
+  padding-left: 23px;
+  margin-bottom: 6px;
+
   line-height: 30px;
 
   color: var(--pink);
+
+  @media (min-width: @tablet-width) {
+    align-self: center;
+
+    padding-left: 0;
+    margin-top: 7px;
+    margin-right: 19px;
+  }
 }
 
 .registration__user-input {
+  padding-top: 22px;
+  padding-right: 20px;
+  padding-bottom: 22px;
+  padding-left: 20px;
+
   border: 2px solid var(--light-grey);
   border-radius: 1px;
+
+  &:hover {
+    border: 2px solid var(--blue);
+  }
+
+  &:focus {
+    border: 2px solid var(--pink);
+  }
 
   &::placeholder {
     font-size: 18px;
@@ -90,11 +144,15 @@
 
     color: var(--blue);
   }
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
 }
 
 .registration__achievements {
   .no__margin-padding();
-  padding-bottom: 30px;
+  padding-bottom: 34px;
 
   border: none;
 
@@ -102,17 +160,23 @@
 
   @media (min-width: @tablet-width) {
     .container();
+    margin-bottom: 32px;
 
     background-color: transparent;
 
     order: 4;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .registration__achievements-list {
-  width: 200px;
-  padding-top: 50px;
+  width: 245px;
+  padding-top: 39px;
   margin: 0 auto;
+  margin-bottom: 38px;
 
   line-height: 18px;
   text-transform: uppercase;
@@ -122,24 +186,42 @@
 
   @media (min-width: @tablet-width) {
     width: auto;
+    padding-top: 33px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 42px;
   }
 }
 
 .registration__achievements-item-wrapper {
+  @media (min-width: @tablet-width) {
+    padding-top: 4px;
+    padding-left: 59px;
+  }
+
   @media (min-width: @desktop-width) {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
 
     padding: 0 61px;
-    height: 170px;
+    height: 195px;
   }
 }
 
 .registration__achievements-item {
+  margin-bottom: 36px;
+
   @media (min-width: @desktop-width) {
     height: 60px;
+    margin-right: 52px;
+    margin-bottom: 23px;
   }
+}
+
+.registration__achievements-item:last-of-type {
+  margin-bottom: 0;
 }
 
 .registration__achievements-input-label {
@@ -149,12 +231,20 @@
 
 .registration__contacts {
   .no__margin-padding();
-  padding: 30px 0;
+  padding-top: 32px;
+  padding-bottom: 25px;
 
   border: none;
 
   @media (min-width: @tablet-width) {
+    padding-top: 67px;
+
     order: 3;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 30px;
+    padding-bottom: 10px;
   }
 }
 
@@ -175,6 +265,11 @@
 }
 
 .registration__contacts-item-wrapper {
+  @media (min-width: @tablet-width) {
+    padding-top: 30px;
+    padding-left: 60px;
+  }
+
   @media (min-width: @desktop-width) {
     display: flex;
     justify-content: space-between;
@@ -187,21 +282,45 @@
   display: flex;
   flex-direction: column;
 
+  margin-bottom: 15px;
+
   @media (min-width: @tablet-width) {
     flex-direction: column-reverse;
+
+    margin-bottom: 24px;
   }
 }
 
 .registration__contacts-input-label {
+  padding-left: 23px;
+  margin-bottom: 6px;
+
   line-height: 30px;
   text-transform: uppercase;
 
   color: var(--pink);
+
+  @media (min-width: @tablet-width) {
+    padding-left: 19px;
+  }
 }
 
 .registration__contacts-input {
+  padding-top: 22px;
+  padding-right: 1px;
+  padding-bottom: 22px;
+  padding-left: 20px;
+
   border: 2px solid var(--light-grey);
   border-radius: 1px;
+
+  &:hover {
+    border: 2px solid var(--blue);
+  }
+
+  &:focus {
+    border: 2px solid var(--pink);
+  }
 
   &::placeholder {
     font-size: 18px;
@@ -209,11 +328,17 @@
 
     color: var(--blue);
   }
+
+  @media (min-width: @tablet-width) {
+    width: 477px;
+    margin-bottom: 8px;
+  }
 }
 
 .registration__app {
   .no__margin-padding();
-  padding: 30px 0;
+  padding-top: 39px;
+  padding-bottom: 6px;
 
   background-color: var(--grey);
 
@@ -246,9 +371,9 @@
 }
 
 .registration_app-list {
-  padding-top: 50px;
+  margin-bottom: 35px;
 
-  line-height: 30px;
+  line-height: 18px;
   text-transform: uppercase;
   text-align: center;
 
@@ -264,6 +389,10 @@
   }
 }
 
+.registration__app-item {
+  margin-bottom: 27px;
+}
+
 .registration__app-input-label {
   font-size: 18px;
   line-height: 30px;
@@ -271,6 +400,8 @@
 
 .registration__emotions {
   .no__margin-padding();
+  padding-top: 8px;
+  margin-bottom: 24px;
 
   border: none;
 
@@ -279,20 +410,51 @@
   }
 }
 
+.registration__emotions-wrapper {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 88px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 78px;
+  }
+}
+
 .registration__emotions-title {
   padding-top: 30px;
   margin: 0 auto;
+  margin-bottom: 17px;
 
   line-height: 18px;
   text-transform: uppercase;
   text-align: center;
 
   color: var(--pink);
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 35px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 0;
+  }
 }
 
 .registration__emotions-textfield {
+  padding: 12px 20px 12px 20px;
+
   border: 2px solid var(--light-grey);
   border-radius: 1px;
+
+  resize: none;
+
+  &:hover {
+    border-color: var(--blue);
+  }
+
+  &:active {
+    border-color: var(--pink);
+  }
 
   &::placeholder {
     font-size: 18px;
@@ -300,27 +462,242 @@
 
     color: var(--blue);
   }
+
+  @media (min-width: @tablet-width) {
+    margin-left: 60px;
+    padding-bottom: 17px;
+    width: 456px;
+    height: 160px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 775px;
+    height: 93px;
+  }
 }
 
 .registration__button {
-  padding: 15px 53px;
+  padding: 16px 0;
 
   .button();
+
+  border-radius: 4px;
+
+  @media (min-width: @tablet-width) {
+    width: 300px;
+    height: 63px;
+  }
 }
 
 .registration__button-wrapper {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 
   @media (min-width: @tablet-width) {
     order: 6;
+    flex-direction: row;
+
+    margin-bottom: 43px;
   }
 }
 
-.registration__required {
+.registration__button-text {
+  font-size: 18px;
   line-height: 30px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+}
+
+.registration__required {
+  align-self: center;
+
+  margin-top: 36px;
+
+  text-transform: uppercase;
+  line-height: 30px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 17px;
+  }
 }
 
 .registration__required--color {
   color: var(--pink);
+}
+
+.registration__hidden-text--form {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: inline;
+  }
+}
+
+// Checkbox
+
+.registration__achievements-input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.registration__achievements-input + .registration__achievements-input-label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+.registration__achievements-input + .registration__achievements-input-label::before {
+  content: "";
+
+  display: inline-block;
+
+  width: 35px;
+  height: 35px;
+  margin-right: 22px;
+
+  flex-shrink: 0;
+  flex-grow: 0;
+
+  border: 2px solid var(--light-grey);
+  border-radius: 1px;
+
+  background-color: var(--white);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+.registration__achievements-input:checked + .registration__achievements-input-label::before {
+  background-image: url("../../img/index__images/tick.svg");
+}
+
+//  Стили при наведении курсора на checkbox
+
+.registration__achievements-input:not(:disabled):not(:checked) + .registration__achievements-input-label:hover::before {
+  border: 2px solid var(--blue);
+}
+
+//  Стили при наведении курсора на checkbox (находящийся в состоянии checked)
+
+.registration__achievements-input:not(:disabled) + .registration__achievements-input-label:hover::before {
+  border: 2px solid var(--blue);
+}
+
+//  Стили для активного состояния чекбокса (при нажатии на него)
+
+.registration__achievements-input:not(:disabled):active + .registration__achievements-input-label::before {
+  border: 2px solid var(--pink);
+}
+
+//  Стили для чекбокса, находящегося в фокусе
+
+.registration__achievements-input:focus + .registration__achievements-input-label::before {
+  border: 2px solid var(--pink);
+}
+
+//  Стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked
+
+.registration__achievements-input:focus:not(:checked) + .registration__achievements-input-label::before {
+  border: 2px solid var(--pink);
+}
+
+//  Стили для чекбокса, находящегося в состоянии disabled
+
+.registration__achievements-input:disabled + .registration__achievements-input-label::before,
+.registration__achievements-input:disabled + .registration__achievements-input-label {
+  opacity: 0.3;
+}
+
+// Radio-button
+
+//  для элемента input c type="radio"
+
+.registration__app-input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+//  для элемента label связанного с .custom-radio
+
+.registration__app-input + .registration__app-input-label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+//  создание в label псевдоэлемента  before со следующими стилями
+
+.registration__app-input + .registration__app-input-label::before {
+  content: "";
+
+  display: inline-block;
+
+  width: 37px;
+  height: 37px;
+  margin-right: 29px;
+
+  flex-shrink: 0;
+  flex-grow: 0;
+
+  border: 2px solid var(--light-grey);
+  border-radius: 50%;
+
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+  background-color: var(--white);
+
+  @media (min-width: @tablet-width) {
+    margin-right: 20px;
+  }
+}
+
+//  стили при наведении курсора на радио
+
+.registration__app-input:not(:disabled):not(:checked) + .registration__app-input-label:hover::before {
+  border-color: var(--blue);
+}
+
+//  стили для радиокнопки, находящейся в состоянии checked
+
+.registration__app-input:checked + .registration__app-input-label::before {
+  border-color: var(--light-grey);
+
+  background-image: url("../../img/index__images/radio-small.svg");
+  background-size: 15px 15px;
+}
+
+// стили для радиокнопки, находящейся в состоянии checked при наведении (hover)
+
+.registration__app-input:checked:hover + .registration__app-input-label::before {
+  border-color: var(--blue);
+}
+
+//  стили для активной радиокнопки (при нажатии на неё)
+
+.registration__app-input:not(:disabled):active + .registration__app-input-label::before {
+  border-color: var(--pink);
+}
+
+//  стили для радиокнопки, находящейся в фокусе
+
+.registration__app-input:focus + .registration__app-input-label::before {
+  border-color: var(--pink);
+}
+
+//  стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked
+
+.registration__app-input:focus:not(:checked) + .registration__app-input-label::before {
+  border-color: var(--pink);
+}
+
+//  стили для радиокнопки и label, находящейся в состоянии disabled
+
+.registration__app-input:disabled + .registration__app-input-label::before,
+.registration__app-input:disabled + .registration__app-input-label {
+  opacity: 0.3;
 }
