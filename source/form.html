@@ -32,7 +32,7 @@
             <span class="page-header__logo-description visually-hidden">Логотип компании Пинк</span>
           </a>
           <div class="page-header__toggle-wrapper">
-            <button class="page-header__toggle" type="button">
+            <button class="page-header__toggle page-header__toggle--no-js" type="button">
               <div class="page-header__toggle-item page-header__toggle-item--closed page-header__toggle-item--hidden">
                 <svg class="page-header__toggle-image page-header__toggle-image--closed" width="50" height="24"
                   viewBox="0 0 50 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -108,17 +108,17 @@
           <div class="registration__user-list">
             <div class="registration__user-item">
               <label class="registration__user-input-label" for="second-name">ФАМИЛИЯ:</label>
-              <input class="registration__input registration__user-input" type="text" id="second-name" name="second-name"
+              <input class="registration__user-input" type="text" id="second-name" name="second-name"
                 placeholder="Укажите фамилию *" required>
             </div>
             <div class="registration__user-item">
               <label class="registration__user-input-label" for="first-name">ИМЯ:</label>
-              <input class="registration__input registration__user-input" type="text" id="first-name" name="first-name"
+              <input class="registration__user-input" type="text" id="first-name" name="first-name"
                 placeholder="Введите ваше имя *" required>
             </div>
             <div class="registration__user-item">
               <label class="registration__user-input-label" for="patronymic">ОТЧЕСТВО:</label>
-              <input class="registration__input registration__user-input" type="text" id="patronymic" name="patronymic"
+              <input class="registration__user-input" type="text" id="patronymic" name="patronymic"
                 placeholder="Ну и отчество тоже">
             </div>
           </div>
@@ -166,12 +166,12 @@
                 <div class="registration__contacts-item">
                   <label class="registration__contacts-input-label" for="contacts-list__phone-number">Номер
                     телефона</label>
-                  <input class="registration__input registration__contacts-input registration__contacts-input--phone" type="tel"
+                  <input class="registration__contacts-input registration__contacts-input--phone" type="tel"
                     id="contacts-list__phone-number" name="contacts-list__phone-number" placeholder="Номер, пожалуйста">
                 </div>
                 <div class="registration__contacts-item">
                   <label class="registration__contacts-input-label" for="contacts-list__email">Адрес почты</label>
-                  <input class="registration__input registration__contacts-input registration__contacts-input--email" type="email"
+                  <input class="registration__contacts-input registration__contacts-input--email" type="email"
                     id="contacts-list__email" name="contacts-list__email" placeholder="Введите почту *" required>
                 </div>
               </div>

@@ -138,6 +138,18 @@
   }
 }
 
+.page-header__toggle--no-js {
+  display: none;
+}
+
+.page-header__toggle--js {
+  display: block;
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
 .page-header__toggle-image {
   &:hover path {
     fill: var(--pink);

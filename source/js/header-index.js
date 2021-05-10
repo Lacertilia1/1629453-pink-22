@@ -32,6 +32,9 @@ navHeaderList.classList.remove("page-header__list--opened");
 navHeader.classList.remove("page-header--opened");
 navDesktopWrapper.classList.remove("page-header__desktop-wrapper--no-color");
 introListWrapper.classList.add("intro__list-wrapper--closed");
+navToggle.classList.remove("page-header__toggle--no-js");
+navToggle.classList.add("page-header__toggle--js");
+navHeader.classList.remove("page-header__pseudo-element--opened");
 
 // Функция
 

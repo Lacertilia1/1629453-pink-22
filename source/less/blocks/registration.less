@@ -130,14 +130,6 @@
   border: 2px solid var(--light-grey);
   border-radius: 1px;
 
-  &:hover {
-    border: 2px solid var(--blue);
-  }
-
-  &:focus {
-    border: 2px solid var(--pink);
-  }
-
   &::placeholder {
     font-size: 18px;
     line-height: 30px;
@@ -314,14 +306,6 @@
   border: 2px solid var(--light-grey);
   border-radius: 1px;
 
-  &:hover {
-    border: 2px solid var(--blue);
-  }
-
-  &:focus {
-    border: 2px solid var(--pink);
-  }
-
   &::placeholder {
     font-size: 18px;
     line-height: 30px;
@@ -448,14 +432,6 @@
 
   resize: none;
 
-  &:hover {
-    border-color: var(--blue);
-  }
-
-  &:active {
-    border-color: var(--pink);
-  }
-
   &::placeholder {
     font-size: 18px;
     line-height: 30px;
@@ -474,6 +450,22 @@
     width: 775px;
     height: 93px;
   }
+}
+
+.registration__user-input:hover {
+  border-color: var(--blue);
+}
+
+.registration__user-input:active {
+  border-color: var(--pink);
+}
+
+.registration__contacts-input:hover {
+  border-color: var(--blue);
+}
+
+.registration__contacts-input:active {
+  border-color: var(--pink);
 }
 
 .registration__button {
@@ -574,33 +566,15 @@
   background-image: url("../../img/index__images/tick.svg");
 }
 
-//  Стили при наведении курсора на checkbox
+// Стили для чекбокса, при наведении
 
-.registration__achievements-input:not(:disabled):not(:checked) + .registration__achievements-input-label:hover::before {
+.registration__achievements-input + .registration__achievements-input-label:hover::before {
   border: 2px solid var(--blue);
 }
 
-//  Стили при наведении курсора на checkbox (находящийся в состоянии checked)
+// Стили для чекбокса, находящегося в состоянии active
 
-.registration__achievements-input:not(:disabled) + .registration__achievements-input-label:hover::before {
-  border: 2px solid var(--blue);
-}
-
-//  Стили для активного состояния чекбокса (при нажатии на него)
-
-.registration__achievements-input:not(:disabled):active + .registration__achievements-input-label::before {
-  border: 2px solid var(--pink);
-}
-
-//  Стили для чекбокса, находящегося в фокусе
-
-.registration__achievements-input:focus + .registration__achievements-input-label::before {
-  border: 2px solid var(--pink);
-}
-
-//  Стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked
-
-.registration__achievements-input:focus:not(:checked) + .registration__achievements-input-label::before {
+.registration__achievements-input + .registration__achievements-input-label:active::before {
   border: 2px solid var(--pink);
 }
 
@@ -656,14 +630,6 @@
   }
 }
 
-//  стили при наведении курсора на радио
-
-.registration__app-input:not(:disabled):not(:checked) + .registration__app-input-label:hover::before {
-  border-color: var(--blue);
-}
-
-//  стили для радиокнопки, находящейся в состоянии checked
-
 .registration__app-input:checked + .registration__app-input-label::before {
   border-color: var(--light-grey);
 
@@ -671,27 +637,11 @@
   background-size: 15px 15px;
 }
 
-// стили для радиокнопки, находящейся в состоянии checked при наведении (hover)
-
-.registration__app-input:checked:hover + .registration__app-input-label::before {
+.registration__app-input + .registration__app-input-label:hover::before {
   border-color: var(--blue);
 }
 
-//  стили для активной радиокнопки (при нажатии на неё)
-
-.registration__app-input:not(:disabled):active + .registration__app-input-label::before {
-  border-color: var(--pink);
-}
-
-//  стили для радиокнопки, находящейся в фокусе
-
-.registration__app-input:focus + .registration__app-input-label::before {
-  border-color: var(--pink);
-}
-
-//  стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked
-
-.registration__app-input:focus:not(:checked) + .registration__app-input-label::before {
+.registration__app-input + .registration__app-input-label:active::before {
   border-color: var(--pink);
 }
 
