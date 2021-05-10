@@ -452,7 +452,7 @@
   }
 }
 
-.registration__user-input:hover {
+.registration__user-item:hover .registration__user-input {
   border-color: var(--blue);
 }
 
@@ -460,7 +460,7 @@
   border-color: var(--pink);
 }
 
-.registration__contacts-input:hover {
+.registration__contacts-item:hover .registration__contacts-input {
   border-color: var(--blue);
 }
 
@@ -541,7 +541,8 @@
   user-select: none;
 }
 
-.registration__achievements-input + .registration__achievements-input-label::before {
+.registration__achievements-input
+  + .registration__achievements-input-label::before {
   content: "";
 
   display: inline-block;
@@ -562,26 +563,31 @@
   background-size: 50% 50%;
 }
 
-.registration__achievements-input:checked + .registration__achievements-input-label::before {
+.registration__achievements-input:checked
+  + .registration__achievements-input-label::before {
   background-image: url("../../img/index__images/tick.svg");
 }
 
 // Стили для чекбокса, при наведении
 
-.registration__achievements-input + .registration__achievements-input-label:hover::before {
+.registration__achievements-input
+  + .registration__achievements-input-label:hover::before {
   border: 2px solid var(--blue);
 }
 
 // Стили для чекбокса, находящегося в состоянии active
 
-.registration__achievements-input + .registration__achievements-input-label:active::before {
+.registration__achievements-input
+  + .registration__achievements-input-label:active::before {
   border: 2px solid var(--pink);
 }
 
 //  Стили для чекбокса, находящегося в состоянии disabled
 
-.registration__achievements-input:disabled + .registration__achievements-input-label::before,
-.registration__achievements-input:disabled + .registration__achievements-input-label {
+.registration__achievements-input:disabled
+  + .registration__achievements-input-label::before,
+.registration__achievements-input:disabled
+  + .registration__achievements-input-label {
   opacity: 0.3;
 }
 
