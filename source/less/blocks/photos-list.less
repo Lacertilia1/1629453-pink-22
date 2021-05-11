@@ -3,37 +3,156 @@
 .photos-list__wrapper {
   @media (min-width: @tablet-width) {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
-.photos-list__image {
-  width: 100%;
+.photos-list__item {
+  margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    min-height: 455px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 54px;
+  }
 }
 
-.photos-list__item {
-  margin-top: 20px;
+.photos-list__item--main-photo {
+  position: relative;
 
-  background-color: var(--grey);
+  @media (min-width: @tablet-width) {
+    margin-bottom: 50px;
+  }
+}
 
+.photos-list__item--main-photo::after {
+  content: "Панорама дня";
+  position: absolute;
+
+  top: 0;
+  right: 20px;
+
+  width: 140px;
+  padding: 6px 0;
+
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+
+  color: var(--white);
+  background-color: var(--pink);
+
+  @media (min-width: @tablet-width) {
+    top: 57px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 54px;
+    right: 130px;
+  }
+}
+
+.photos-list__item--flex {
   @media (min-width: @tablet-width) {
     width: 300px;
   }
 }
 
-.photos-list__review-wrapper {
-  background-color: var(--grey);
+// Данный блок убирает отступы у последних 3-х постов в каталоге на desktop-ширине
+
+.photos-list__item--flex:nth-last-child(1) {
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
-.photos-list__review {
-  .no__margin-padding();
+.photos-list__item--flex:nth-last-child(2) {
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.photos-list__item--flex:nth-last-child(3) {
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+  }
+}
+//_____________________________________________________________
+
+.photos-list__image {
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    height: 506px;
+  }
+}
+
+.photos-list__common-image {
+  @media (min-width: @tablet-width) {
+    width: 300px;
+    height: 300px;
+
+    object-fit: cover;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 400px;
+  }
+}
+
+.photos-list__review-wrapper {
+  margin-top: -7px;
+  padding: 19px 10px 19px 17px;
+
+  background-color: var(--grey);
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    padding: 30px;
+    padding-bottom: 25px;
+    padding-top: 23px;
+  }
 }
 
 .photos-list__author {
   font-size: 14px;
   font-weight: 700;
   font-style: normal;
+}
+
+.photos-list__author-text {
+  .no__margin-padding();
+  margin-bottom: 9px;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    .no__margin-padding();
+  }
+}
+
+.photos-list__author-text--main-photo {
+  @media (min-width: @tablet-width) {
+    order: 3;
+  }
+}
+
+.photos-list__author-text--margin {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 10px;
+  }
+}
+
+.photos-list__author-text--margin-big {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 34px;
+  }
 }
 
 .photos-list__time {
