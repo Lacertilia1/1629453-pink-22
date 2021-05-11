@@ -3,10 +3,31 @@
 .likes-block {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+    width: 100%;
+  }
+}
+
+.likes-block--main-photo {
+  @media (min-width: @tablet-width) {
+    width: 119px;
+  }
 }
 
 .likes-block__text {
-  color: var(--pink);
+  padding-left: 20px;
+  margin: 0;
+
+  font-size: 12px;
   text-transform: uppercase;
+
+  color: var(--pink);
+
+  @media (min-width: @tablet-width) {
+    .no__margin-padding();
+  }
 }
