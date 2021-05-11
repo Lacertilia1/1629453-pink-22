@@ -8,6 +8,13 @@
   }
 }
 
+.reviews__wrapper {
+  @media (min-width: @desktop-width) {
+    position: relative;
+    .container();
+  }
+}
+
 .reviews__list {
   position: relative;
 
@@ -127,4 +134,33 @@
   @media (min-width: @desktop-width) {
     display: none;
   }
+}
+
+.reviews__controls-item {
+  position: absolute;
+
+  width: 22px;
+  height: 41px;
+
+  border: none;
+
+  background-color: transparent;
+
+  cursor: pointer;
+}
+
+.reviews__controls-item--left {
+  top: 54%;
+  left: 0;
+
+  background-image: url("../../img/index__images/left-arrow.svg");
+  background-repeat: no-repeat;
+}
+
+.reviews__controls-item--right {
+  top: 54%;
+  right: 0;
+
+  background-image: url("../../img/index__images/right-arrow.svg");
+  background-repeat: no-repeat;
 }
