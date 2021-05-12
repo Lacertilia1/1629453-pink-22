@@ -18,19 +18,25 @@
   background-repeat: no-repeat;
   background-size: 100% auto;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/index__images/back-mobile@2x.jpg");
+  }
+
   @media (min-width: @tablet-width) {
     background-image: url("../../img/index__images/back-tablet.jpg");
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/index__images/back-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: @desktop-width) {
     background-color: rgba(0, 0, 0, 0.3);
     background-image: url("../../img/index__images/back-desktop.jpg");
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/index__images/back-desktop@2x.jpg");
+    }
   }
 }
 
@@ -60,11 +66,19 @@
   background-size: cover;
   min-height: 284px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/index__images/phone@2x.png");
+  }
+
   @media (min-width: @tablet-width) {
     width: 660px;
 
     background-image: url("../../img/index__images/phone-tablet.png");
     min-height: 545px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/index__images/phone-tablet@2x.png");
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -75,6 +89,10 @@
 
     background-image: url("../../img/index__images/phone-desktop.png");
     min-height: 645px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/index__images/phone-desktop@2x.png");
+    }
   }
 }
 
@@ -114,17 +132,17 @@
   }
 }
 
-.page-header__logo {
+.page-header__logo-image {
   width: 74px;
   height: 23px;
 
-  &:hover path {
-    fill: var(--pink);
+  @media (min-width: @tablet-width) {
+    width: 145px;
+    height: 40px;
   }
 
-  &:active path {
-    fill: var(--white);
-    fill-opacity: 0.3;
+  @media (min-width: @desktop-width) {
+    width: 147px;
   }
 }
 

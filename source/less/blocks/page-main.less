@@ -12,12 +12,24 @@
   background-repeat: no-repeat;
   background-size: 100%;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/index__images/back-mobile@2x.jpg");
+  }
+
   @media (min-width: @tablet-width) {
-    background-image: url("../../img/index__images/back-tablet-form.jpg");
+    background-image: url("../../img/index__images/back-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/index__images/back-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: @desktop-width) {
-    background-image: url("../../img/index__images/back-desktop-form.jpg");
+    background-image: url("../../img/index__images/back-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/index__images/back-desktop@2x.jpg");
+    }
   }
 }
 
