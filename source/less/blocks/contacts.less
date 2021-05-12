@@ -143,15 +143,33 @@
 
 .contacts__link--effects:hover {
   color: var(--blue);
+}
 
-  text-decoration: underline;
-  text-decoration-color: var(--blue);
+.contacts__link--effects:hover::after {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+
+  width: 100%;
+  height: 2px;
+
+  background-color: var(--blue);
+  background-repeat: no-repeat;
+}
+
+.contacts__link--address-effects:hover::after {
+  left: -37px;
+  width: 211px;
 }
 
 .contacts__link--effects:active {
-  text-decoration: none;
-
   opacity: 0.3;
+}
+
+.contacts__link--effects:active::after {
+  background-color: transparent;
 }
 
 .contacts__map-wrapper {
