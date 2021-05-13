@@ -136,31 +136,46 @@
   }
 }
 
-.reviews__controls-item {
+.reviews__controls-list {
+  display: none;
+
   position: absolute;
 
-  width: 22px;
-  height: 41px;
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
 
+.reviews__controls-item {
   border: none;
-
-  background-color: transparent;
 
   cursor: pointer;
 }
 
 .reviews__controls-item--left {
-  top: 54%;
-  left: 0;
+  position: absolute;
+  bottom: 135px;
+  left: -6px;
 
-  background-image: url("../../img/index__images/left-arrow.svg");
-  background-repeat: no-repeat;
+  background-color: transparent;
 }
 
 .reviews__controls-item--right {
-  top: 54%;
-  right: 0;
+  position: absolute;
+  bottom: 135px;
+  right: -946px;
 
-  background-image: url("../../img/index__images/right-arrow.svg");
-  background-repeat: no-repeat;
+  background-color: transparent;
+}
+
+.reviews__control-image path {
+  fill-opacity: 0.3;
+}
+
+.reviews__control-image:hover path {
+  fill-opacity: 0.6;
+}
+
+.reviews__control-image:active path {
+  fill-opacity: 0.1;
 }

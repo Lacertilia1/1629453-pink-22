@@ -207,7 +207,7 @@
 .upload__background {
   @media (min-width: @desktop-width) {
     .container();
-    padding-bottom: 57px;
+    padding-bottom: 50px;
 
     background-color: var(--grey);
   }
@@ -409,4 +409,29 @@
 
 .upload__range::-moz-range-thumb:active {
   background: var(--pink);
+}
+
+.upload__range::after {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  top: 120px;
+
+  width: 100%;
+  height: 1px;
+
+  background-color: var(--blue-with-opacity);
+
+  @media (min-width: @tablet-width) {
+    top: 52px;
+
+    width: 275px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 61px;
+
+    width: 410px;
+  }
 }
