@@ -41,16 +41,8 @@
 }
 
 .page-footer__logo {
-  &:hover .page-footer__logo-path {
-    fill: var(--pink);
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
-
-  &:active .page-footer__logo-path {
-    fill: var(--black);
+  @media (min-width: @desktop-width) {
+    width: 147px;
   }
 }
 
