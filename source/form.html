@@ -87,7 +87,7 @@
           безбашенное
           путешествие с Пинк
         </h1>
-      </div>
+      </div><!-- Container -|- End -->
     </div>
 
     <section class="registration">
@@ -100,23 +100,23 @@
           шанс выиграть ценный приз — 1000
           миль на вашу бонусную карту!
           <span class="registration__text-add">Пожалуйста, заполните форму ниже:</span>
-        </p>
+        </p><!-- Container -|- End -->
         <form class="registration__form" method="get" action="https://echo.htmlacademy.ru" target="_blank">
           <div class="registration__user-list">
             <div class="registration__user-item">
               <label class="registration__user-input-label" for="second-name">ФАМИЛИЯ:</label>
-              <input class="registration__user-input" type="text" id="second-name" name="second-name"
-                placeholder="Укажите фамилию *" required>
+              <input class="registration__user-input registration__user-input--status" type="text" id="second-name"
+                name="second-name" placeholder="Укажите фамилию *" required>
             </div>
             <div class="registration__user-item">
               <label class="registration__user-input-label" for="first-name">ИМЯ:</label>
-              <input class="registration__user-input" type="text" id="first-name" name="first-name"
-                placeholder="Введите ваше имя *" required>
+              <input class="registration__user-input registration__user-input--status" type="text" id="first-name"
+                name="first-name" placeholder="Введите ваше имя *" required>
             </div>
             <div class="registration__user-item">
               <label class="registration__user-input-label" for="patronymic">ОТЧЕСТВО:</label>
-              <input class="registration__user-input" type="text" id="patronymic" name="patronymic"
-                placeholder="Ну и отчество тоже">
+              <input class="registration__user-input registration__user-input--status" type="text" id="patronymic"
+                name="patronymic" placeholder="Ну и отчество тоже">
             </div>
           </div>
 
@@ -165,7 +165,7 @@
                     отель</label>
                 </div>
               </div>
-            </div>
+            </div><!-- Container -|- End -->
           </fieldset>
 
           <fieldset class="registration__contacts">
@@ -175,16 +175,20 @@
                 <div class="registration__contacts-item">
                   <label class="registration__contacts-input-label" for="contacts-list__phone-number">Номер
                     телефона</label>
-                  <input class="registration__contacts-input registration__contacts-input--phone" type="tel"
-                    id="contacts-list__phone-number" name="contacts-list__phone-number" placeholder="Номер, пожалуйста">
+                  <input
+                    class="registration__contacts-input registration__contacts-input--status registration__contacts-input--phone"
+                    type="tel" id="contacts-list__phone-number" name="contacts-list__phone-number"
+                    placeholder="Номер, пожалуйста">
                 </div>
                 <div class="registration__contacts-item">
                   <label class="registration__contacts-input-label" for="contacts-list__email">Адрес почты</label>
-                  <input class="registration__contacts-input registration__contacts-input--email" type="email"
-                    id="contacts-list__email" name="contacts-list__email" placeholder="Введите почту *" required>
+                  <input
+                    class="registration__contacts-input registration__contacts-input--status registration__contacts-input--email"
+                    type="email" id="contacts-list__email" name="contacts-list__email" placeholder="Введите почту *"
+                    required>
                 </div>
               </div>
-            </div>
+            </div><!-- Container -|- End -->
           </fieldset>
 
           <fieldset class="registration__app">
@@ -221,12 +225,13 @@
               <legend class="registration__emotions-title">
                 Опишите свои эмоции
               </legend>
-              <p class="registration__emotions-wrapper">
+              <p class="registration__emotions-text-wrapper">
                 <label class="registration__emotions-label visually-hidden" for="description"></label>
-                <textarea class="registration__emotions-textfield" id="description" name="description" rows="11"
-                  cols="33" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+                <textarea class="registration__emotions-textfield registration__emotions-textfield--status"
+                  id="description" name="description" rows="11" cols="33"
+                  placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
               </p>
-            </div>
+            </div><!-- Container -|- End -->
           </fieldset>
           <div class="registration__button-wrapper container">
             <button class="registration__button" type="submit"><span class="registration__button-text">Отправить
@@ -234,7 +239,7 @@
             <p class="registration__required">
               <span class="registration__required--color">*</span> — обязательные <span
                 class="registration__hidden-text registration__hidden-text--form">для заполнения</span> поля
-          </div>
+          </div><!-- Container -|- End -->
         </form>
       </div>
     </section>
@@ -250,7 +255,8 @@
         <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
           <picture>
             <source media="(min-width: 1200px)" srcset="img/index__images/logotype-pink-desktop.svg">
-            <img class="page-footer__logo" src="img/index__images/footer-logo.svg" width="145" height="40" alt="Логотип компании Пинк">
+            <img class="page-footer__logo" src="img/index__images/footer-logo.svg" width="145" height="40"
+              alt="Логотип компании Пинк">
           </picture>
           <span class="page-footer__logo-description visually-hidden">Логотип компании Пинк</span>
         </a>
@@ -302,33 +308,39 @@
           </svg>
         </a>
       </div>
-    </div>
+    </div><!-- Container -|- End -->
   </footer><!-- Footer -|- End -->
 
   <!-- Popup -|- Start -->
-  <div class="success-popup">
-    <h2 class="success-popup__heading">
-      Ваша заявка отправлена
-    </h2>
-    <p class="success-popup__text">
-      Спасибо за ваше участие, ваша заявка
-      уже поступила к нам. В ближайшее
-      время мы рассмотрим ее и
-      оповестим вас.
-    </p>
+  <div class="success-popup success-popup--closed">
+    <div class="success-popup__text-wrapper">
+      <h2 class="success-popup__heading">
+        Ваша заявка отправлена
+      </h2>
+      <p class="success-popup__text">
+        Спасибо за ваше участие, ваша
+        заявка уже поступила к нам. В
+        ближайшее время мы рассмотрим
+        ее и<br class="success-popup__br"> оповестим вас.
+      </p>
+    </div>
     <div class="success-button__close-button-wrapper">
       <button class="success-popup__close-button" type="button">Закрыть окно</button>
     </div>
   </div>
 
-  <div class="failure-popup">
-    <h2 class="failure-popup__heading">Что-то пошло не так!</h2>
-    <p class="failure-popup__text">
-      Проверьте поля, выделенные красным,
-      скорее всего вы забыли их заполнить
-    </p>
+  <div class="failure-popup failure-popup--closed">
+    <div class="failure-popup__text-wrapper">
+      <h2 class="failure-popup__heading">Что-то пошло не так!</h2>
+      <p class="failure-popup__text">
+        Проверьте поля, выделенные красным,
+        скорее всего вы забыли их заполнить
+      </p>
+    </div>
     <div class="failure-button__close-button-wrapper">
-      <button class="failure-popup__close-button" type="button">Ок</button>
+      <div class="failure-button__button-wrapper">
+        <button class="failure-popup__close-button" type="button">Ок</button>
+      </div>
     </div>
   </div><!-- Popup -|- End -->
   <script src="js/header-form.js"></script>

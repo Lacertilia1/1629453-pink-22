@@ -15,6 +15,12 @@
   }
 }
 
+.page-footer--padding {
+  @media (min-width: @desktop-width) {
+    padding-top: 68px;
+  }
+}
+
 .page-footer__wrapper {
   display: flex;
   flex-direction: column;
@@ -72,6 +78,8 @@
 
   border: 3px solid var(--blue-with-opacity);
   border-radius: 50%;
+
+  cursor: pointer;
 
   &:hover {
     border: 3px solid var(--blue);
