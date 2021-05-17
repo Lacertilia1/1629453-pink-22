@@ -1,17 +1,16 @@
 // Failure.less
 
 .failure-popup {
-  position: absolute;
-  top: 50%;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  position: fixed;
+  top: 180px;
+  left: 0;
+  right: 0;
 
   width: 320px;
   min-height: 289px;
 
   box-sizing: border-box;
+  margin: auto;
   padding: 38px 20px 0;
 
   background-color: var(--white);
@@ -32,8 +31,16 @@
   }
 }
 
-.failure-popup--closed {
-  display: none;
+.failure-popup__text-wrapper {
+  margin-bottom: 41px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 36px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 64px;
+  }
 }
 
 .failure-popup__heading {
@@ -89,9 +96,7 @@
 }
 
 .failure-button__button-wrapper {
-  @media (min-width: @desktop-width) {
-    padding-left: 241px;
-  }
+  display: flex;
 }
 
 .failure-popup__close-button {
