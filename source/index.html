@@ -3,12 +3,20 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicon/favicon-32x32.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon/favicon-180x180.png">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preload" href="img/index__images/back-desktop.jpg" as="image">
+  <link rel="preload" href="img/index__images/back-mobile@2x.jpg" as="image">
+  <link rel="preload" href="fonts/open-sans-v18-latin_cyrillic-300.woff2" type="font/woff2" as="font">
+  <link rel="preload" href="fonts/opensans.woff2" type="font/woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" type="font/woff2" as="font">
+  <meta name="description"
+    content="Курсы для всех. Интерактивные задания помогут освоить веб-технологии и создать сайт, а профессиональные курсы подготовят к старту карьеры в IT.">
+  <meta name="keywords" content="пинк, html academy, готовый проект, бесплатно">
 </head>
 
 <body class="page__body">
@@ -81,7 +89,7 @@
                 </a>
               </li>
               <li class="page-header__item page-header__item--fourth">
-                <a class="page-header__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+                <a class="page-header__link" href="https://htmlacademy.ru/intensive/adaptive">
                   HTML Academy
                 </a>
               </li>
@@ -108,29 +116,34 @@
           </p>
           <div class="intro__add-wrapper">
             <div class="intro__button">
-              <a class="intro__link" href="https://www.apple.com/ru/app-store/" target="_blank">
+              <a class="intro__link" href="https://www.apple.com/ru/app-store/">
                 Скачать приложение
               </a>
             </div>
             <ul class="intro__list">
               <li class="intro__item intro__item--apple">
-                <a class="intro__item-image-link" href="https://www.apple.com/ru/app-store/" target="_blank">
-                  <svg class="intro__item-image intro__item-image--apple-size intro__item-image--apple-color" width="47" height="56" viewBox="0 0 47 56">
+                <a class="intro__item-image-link" href="https://www.apple.com/ru/app-store/"
+                  aria-label="Ссылка на app-store">
+                  <svg class="intro__item-image intro__item-image--apple-size intro__item-image--apple-color" width="47"
+                    height="56" viewBox="0 0 47 56">
                     <use xlink:href="img/svg/svg-images/sprite.svg#apple-logo"></use>
                   </svg>
                 </a>
               </li>
               <li class="intro__item intro__item--android">
-                <a class="intro__item-image-link" href="https://play.google.com/store" target="_blank">
-                  <svg class="intro__item-image intro__item-image--android-size intro__item-image--android-color" width="43" height="47" viewBox="0 0 43 47">
+                <a class="intro__item-image-link" href="https://play.google.com/store"
+                  aria-label="Ссылка на play-market">
+                  <svg class="intro__item-image intro__item-image--android-size intro__item-image--android-color"
+                    width="43" height="47" viewBox="0 0 43 47">
                     <use xlink:href="img/svg/svg-images/sprite.svg#android-logo"></use>
                   </svg>
                 </a>
               </li>
               <li class="intro__item intro__item--microsoft">
                 <a class="intro__item-image-link" href="https://www.microsoft.com/ru-ru/store/apps/windows-phone"
-                  target="_blank">
-                  <svg class="intro__item-image intro__item-image--windows-size intro__item-image--windows-color" width="44" height="41" viewBox="0 0 44 41">
+                  aria-label="Ссылка на microsoft-store">
+                  <svg class="intro__item-image intro__item-image--windows-size intro__item-image--windows-color"
+                    width="44" height="41" viewBox="0 0 44 41">
                     <use xlink:href="img/svg/svg-images/sprite.svg#microsoft-logo"></use>
                   </svg>
                 </a>
@@ -213,18 +226,18 @@
       <div class="effect__main-wrapper container">
         <div class="effect__wrapper">
           <h2 class="effect__heading">
-            Эффект<br class="page-main__br page-main__br--desktop">&nbsp;
-            на часа!
+            Эффект&nbsp;<br class="page-main__br page-main__br--desktop">
+            на 24 часа!
           </h2>
           <p class="effect__text">
-            Британские ученые провели исследования<br class="page-main__br page-main__br--desktop">&nbsp;
-            и доказали,<br class="page-main__br page-main__br-no-tablet">&nbsp;
-            что положительный эффект<br class="page-main__br page-main__br--desktop">&nbsp;
-            от использования приложения<br class="page-main__br page-main__br-no-tablet">&nbsp;
-            длится<br class="page-main__br page-main__br--desktop">&nbsp;
+            Британские ученые провели исследования &nbsp;<br class="page-main__br page-main__br--desktop">
+            и доказали,&nbsp;<br class="page-main__br page-main__br-no-tablet page-main__br--with-desktop">
+            что положительный эффект &nbsp;<br class="page-main__br page-main__br--desktop">
+            от использования приложения &nbsp;<br class="page-main__br page-main__br-no-tablet">
+            длится &nbsp;<br class="page-main__br page-main__br--desktop">
             целые сутки!
           </p>
-          <a class="effect__link" href="img/svg/sprite.svg#" target="_blank">Узнать больше об исследовании</a>
+          <a class="effect__link" href="img/svg/sprite.svg#">Узнать больше об исследовании</a>
         </div>
       </div><!-- Container -|- End -->
     </section>
@@ -251,17 +264,27 @@
 
         <div class="reviews__toggles-wrapper">
           <p class="reviews__toggles slider__toggles">
-            <button class="slider__toggle slider__toggle--current" type="button"><span
-                class="slider__toggle-number visually-hidden">1</span></button>
-            <button class="slider__toggle" type="button"><span
-                class="slider__toggle-number visually-hidden">2</span></button>
-            <button class="slider__toggle" type="button"><span
-                class="slider__toggle-number visually-hidden">3</span></button>
+            <button class="slider__toggle slider__toggle--current" type="button">
+              <span class="slider__toggle-number visually-hidden">1</span>
+              <div class="slider__dot">
+              </div>
+            </button>
+            <button class="slider__toggle" type="button">
+              <span class="slider__toggle-number visually-hidden">2</span>
+              <div class="slider__dot">
+              </div>
+            </button>
+            <button class="slider__toggle" type="button">
+              <span class="slider__toggle-number visually-hidden">3</span>
+              <div class="slider__dot">
+              </div>
+            </button>
           </p>
         </div>
 
         <div class="reviews__controls-list">
           <button class="reviews__controls-item reviews__controls-item--left">
+            <span class="visually-hidden">Посмотреть предыдущий слайд</span>
             <svg class="reviews__control-image" width="22" height="41" viewBox="0 0 22 41" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <svg width="22" height="41" viewBox="0 0 22 41" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -272,6 +295,7 @@
             </svg>
           </button>
           <button class="reviews__controls-item reviews__controls-item--right">
+            <span class="visually-hidden">Посмотреть следующий слайд</span>
             <svg class="reviews__control-image" width="22" height="41" viewBox="0 0 22 41" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <svg width="22" height="41" viewBox="0 0 22 41" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -359,11 +383,20 @@
 
         <div class="price__toggles slider__toggles">
           <button class="price__toggle slider__toggle" type="button"><span
-              class="slider__toggle-number visually-hidden">1</span></button>
+              class="slider__toggle-number visually-hidden">1</span>
+            <div class="slider__dot">
+            </div>
+          </button>
           <button class="price__toggle slider__toggle slider__toggle--current" type="button"><span
-              class="slider__toggle-number visually-hidden">2</span></button>
+              class="slider__toggle-number visually-hidden">2</span>
+            <div class="slider__dot">
+            </div>
+          </button>
           <button class="price__toggle slider__toggle" type="button"><span
-              class="slider__toggle-number visually-hidden">3</span></button>
+              class="slider__toggle-number visually-hidden">3</span>
+            <div class="slider__dot">
+            </div>
+          </button>
         </div>
       </div><!-- Container -|- End -->
     </section>
@@ -404,8 +437,8 @@
               Приезжайте в гости:
             </p>
             <p class="contacts__item contacts__item--description">
-              <a class="contacts__link contacts__link--effects contacts__link--address-effects" href="#"
-                target="_blank">ул. Большая<br class="page-main__br">
+              <a class="contacts__link contacts__link--effects contacts__link--address-effects" href="#">
+                ул. Большая &nbsp;<br class="page-main__br">
                 Конюшенная, 19/8</a>
             </p>
           </div>
@@ -415,7 +448,8 @@
       <div class="contacts__map-wrapper">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.2665256591063!2d30.318991898850733!3d59.938227412150475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1620332291997!5m2!1sru!2sru"
-          height="200" style="border: 0;" allowfullscreen aria-hidden="false" tabindex="0"></iframe>
+          height="200" style="border: 0;" allowfullscreen aria-hidden="false" tabindex="0"
+          aria-label="Карта с адресом компании Пинк"></iframe>
       </div>
       </div>
     </section>
@@ -428,15 +462,17 @@
       <h2 class="page-footer__heading visually-hidden">Социальные сети и авторские права</h2>
 
       <div class="page-footer__logo-wrapper">
-        <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+        <a href="https://htmlacademy.ru/intensive/adaptive">
           <picture>
             <svg
-              class="page-footer__logo page-footer__logo--desktop page-footer__logo--desktop-size page-footer__logo--color" width="147" height="40" viewBox="0 0 147 40">
+              class="page-footer__logo page-footer__logo--desktop page-footer__logo--desktop-size page-footer__logo--color"
+              width="147" height="40" viewBox="0 0 147 40">
               <use xlink:href="img/svg/svg-images/sprite.svg#logotype-pink-desktop"></use>
             </svg>
 
             <svg
-              class="page-footer__logo page-footer__logo--mobile page-footer__logo--mobile-size page-footer__logo--color" width="145" height="40" viewBox="0 0 145 40">
+              class="page-footer__logo page-footer__logo--mobile page-footer__logo--mobile-size page-footer__logo--color"
+              width="145" height="40" viewBox="0 0 145 40">
               <use xlink:href="img/svg/svg-images/sprite.svg#logotype-blue-tablet"></use>
             </svg>
           </picture>
@@ -448,24 +484,27 @@
         <li class="page-footer__item">
           <a class="page-footer__item-link page-footer__item-link--twitter"
             href="https://twitter.com/htmlacademy_ru?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
-            target="_blank">
-            <svg class="page-footer__icon page-footer__icon--twitter-size page-footer__icon--color" width="18" height="14" viewBox="0 0 18 14">
+            aria-label="Ссылка на twitter">
+            <svg class="page-footer__icon page-footer__icon--twitter-size page-footer__icon--color" width="18"
+              height="14" viewBox="0 0 18 14">
               <use xlink:href="img/svg/svg-images/sprite.svg#footer-logo--twitter"></use>
             </svg>
           </a>
         </li>
         <li class="page-footer__item">
           <a class="page-footer__item-link page-footer__item-link--facebook"
-            href="https://www.facebook.com/htmlacademy/" target="_blank">
-            <svg class="page-footer__icon page-footer__icon--facebook-size page-footer__icon--color" width="9" height="18" viewBox="0 0 9 18">
+            href="https://www.facebook.com/htmlacademy/" aria-label="Ссылка на facebook">
+            <svg class="page-footer__icon page-footer__icon--facebook-size page-footer__icon--color" width="9"
+              height="18" viewBox="0 0 9 18">
               <use xlink:href="img/svg/svg-images/sprite.svg#footer-logo--facebook"></use>
             </svg>
           </a>
         </li>
         <li class="page-footer__item">
           <a class="page-footer__item-link page-footer__item-link--youtube"
-            href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g" target="_blank">
-            <svg class="page-footer__icon page-footer__icon--youtube-size page-footer__icon--color" width="15" height="13" viewBox="0 0 15 13">
+            href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g" aria-label="Ссылка на youtube">
+            <svg class="page-footer__icon page-footer__icon--youtube-size page-footer__icon--color" width="15"
+              height="13" viewBox="0 0 15 13">
               <use xlink:href="img/svg/svg-images/sprite.svg#footer-logo--youtube"></use>
             </svg>
           </a>
@@ -476,8 +515,10 @@
         <p class="page-footer__text">
           Разработано
         </p>
-        <a class="page-footer__academy-logo" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-          <svg class="page-footer__icon page-footer__icon--academy-size page-footer__icon--academy-color" width="27" height="34" viewBox="0 0 27 34">
+        <a class="page-footer__academy-logo" href="https://htmlacademy.ru/intensive/adaptive"
+          aria-label="Ссылка на html academy">
+          <svg class="page-footer__icon page-footer__icon--academy-size page-footer__icon--academy-color" width="27"
+            height="34" viewBox="0 0 27 34">
             <use xlink:href="img/svg/svg-images/sprite.svg#footer-logo--html-academy"></use>
           </svg>
         </a>
