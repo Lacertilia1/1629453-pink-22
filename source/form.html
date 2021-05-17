@@ -25,8 +25,8 @@
     <div class="page-header__desktop-nav-wrapper page-header__desktop-nav-wrapper--opened">
       <div class="page-header__desktop-wrapper page-header__desktop-wrapper--no-color">
         <div class="page-header__main-wrapper page-header__main-wrapper--opened">
-          <a class="page-header__logo" href="index.html">
-            <picture>
+          <a class="page-header__logo" href="#">
+            <div class="page-header__logo-image-wrapper">
               <svg
                 class="page-header__logo-image page-header__logo-image-mobile page-header__logo-image--color page-header__logo-image--mobile-size"
                 width="74" height="23" viewBox="0 0 74 23">
@@ -44,26 +44,26 @@
                 width="147" height="40" viewBox="0 0 147 40">
                 <use xlink:href="img/svg/svg-images/sprite.svg#logotype-white-desktop"></use>
               </svg>
-            </picture>
+            </div>
             <span class="page-header__logo-description visually-hidden">Логотип компании Пинк</span>
           </a>
           <div class="page-header__toggle-wrapper">
             <button class="page-header__toggle page-header__toggle--no-js" type="button">
-              <div class="page-header__toggle-item page-header__toggle-item--closed page-header__toggle-item--hidden">
+              <span class="page-header__toggle-item page-header__toggle-item--closed page-header__toggle-item--hidden">
                 <svg
                   class="page-header__toggle-image page__header__toggle-image--closed-button-size page-header__toggle-image--closed"
                   width="50" height="24" viewBox="0 0 50 24">
                   <use xlink:href="img/svg/svg-images/sprite.svg#open-menu-btn"></use>
                 </svg>
-              </div>
+              </span>
 
-              <div class="page-header__toggle-item page-header__toggle-item--opened">
+              <span class="page-header__toggle-item page-header__toggle-item--opened">
                 <svg
                   class="page-header__toggle-image page-header__toggle-image--opened-button-size page-header__toggle-image--opened"
                   width="23" height="23" viewBox="0 0 23 23">
                   <use xlink:href="img/svg/svg-images/sprite.svg#close-menu-btn"></use>
                 </svg>
-              </div>
+              </span>
               <span class="page-header__toggle-description visually-hidden">Открыть меню</span>
             </button>
           </div>
@@ -113,7 +113,7 @@
     <section class="registration">
       <div class="registration__wrapper">
 
-        <h2 class="registration__heading visually-hidden">Регистрация вашего путешествия</h2>
+        <h3 class="registration__heading visually-hidden">Регистрация вашего путешествия</h3>
 
         <p class="registration__text container">
           Поделитесь своей историей и получите
@@ -144,11 +144,11 @@
 
           <fieldset class="registration__achievements">
             <div class="registration__achievements-wrapper container">
-              <legend class="registration__achievements-list">
+              <h3 class="registration__achievements-list">
                 Ваши безбашенные
                 достижения в
                 путешествии
-              </legend>
+              </h3>
               <div class="registration__achievements-item-wrapper checkbox">
                 <div class="registration__achievements-item checkbox__item">
                   <input class="registration__achievements-input checkbox__input" type="checkbox" id="selfie"
@@ -192,7 +192,7 @@
 
           <fieldset class="registration__contacts">
             <div class="registration__contacts-wrapper container">
-              <legend class="registration__contacts-list">Контактная информация</legend>
+              <h3 class="registration__contacts-list">Контактная информация</h3>
               <div class="registration__contacts-item-wrapper">
                 <div class="registration__contacts-item">
                   <label class="registration__contacts-input-label" for="contacts-list__phone-number">Номер
@@ -214,10 +214,10 @@
 
           <fieldset class="registration__app">
             <div class="registration__app-wrapper">
-              <legend class="registration_app-list">
+              <h3 class="registration_app-list">
                 С каким приложением
                 путешествовали?
-              </legend>
+              </h3>
               <div class="registration__app-item-wrapper radio-button">
                 <div class="registration__app-item radio-button__item">
                   <input class="registration__app-input radio-button__input" type="radio" id="app__ios" name="app-type"
@@ -243,9 +243,9 @@
 
           <fieldset class="registration__emotions">
             <div class="registration__emotions-wrapper container">
-              <legend class="registration__emotions-title">
+              <h3 class="registration__emotions-title">
                 Опишите свои эмоции
-              </legend>
+              </h3>
               <p class="registration__emotions-text-wrapper">
                 <label class="registration__emotions-label visually-hidden" for="description"></label>
                 <textarea class="registration__emotions-textfield registration__emotions-textfield--status"
@@ -274,7 +274,7 @@
 
       <div class="page-footer__logo-wrapper">
         <a href="https://htmlacademy.ru/intensive/adaptive">
-          <picture>
+          <div class="page-footer__image-logo-wrapper">
             <svg
               class="page-footer__logo page-footer__logo--desktop page-footer__logo--desktop-size page-footer__logo--color"
               width="147" height="40" viewBox="0 0 147 40">
@@ -286,7 +286,7 @@
               width="145" height="40" viewBox="0 0 145 40">
               <use xlink:href="img/svg/svg-images/sprite.svg#logotype-blue-tablet"></use>
             </svg>
-          </picture>
+          </div>
           <span class="page-footer__logo-description visually-hidden">Логотип компании Пинк</span>
         </a>
       </div>
@@ -340,9 +340,9 @@
   <!-- Popup -|- Start -->
   <div class="success-popup popup--hidden">
     <div class="success-popup__text-wrapper">
-      <h2 class="success-popup__heading">
+      <h3 class="success-popup__heading">
         Ваша заявка отправлена
-      </h2>
+      </h3>
       <p class="success-popup__text">
         Спасибо за ваше участие, ваша
         заявка уже поступила к нам. В
@@ -357,7 +357,7 @@
 
   <div class="failure-popup popup--hidden">
     <div class="failure-popup__text-wrapper">
-      <h2 class="failure-popup__heading">Что-то пошло не так!</h2>
+      <h3 class="failure-popup__heading">Что-то пошло не так!</h3>
       <p class="failure-popup__text">
         Проверьте поля, выделенные красным,
         скорее всего вы забыли их заполнить
