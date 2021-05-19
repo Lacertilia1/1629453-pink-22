@@ -42,9 +42,25 @@
   border-radius: 50%;
 }
 
+.slider__toggle:hover .slider__dot {
+  opacity: 0.6;
+}
+
+.slider__toggle:active .slider__dot {
+  opacity: 0.1;
+}
+
 .slider__toggle--current .slider__dot {
   background-color: var(--white);
   opacity: 1;
 
   border: 3px solid var(--blue);
+}
+
+.slider__toggle--current:hover .slider__dot {
+  opacity: 1;
+}
+
+.slider__toggle--current:active .slider__dot {
+  opacity: 1;
 }
