@@ -62,6 +62,10 @@
 
 .page-main__intro--catalog {
   @media (min-width: @tablet-width) {
+    width: 440px;
+  }
+
+  @media (min-width: @desktop-width) {
     width: 100%;
   }
 }
@@ -142,5 +146,19 @@
 
   @media (min-width: @desktop-width) {
     display: inline;
+  }
+}
+
+.page-main__br--mobile {
+  display: block;
+
+  @media (min-width: @tablet-width) {
+    display: inline;
+  }
+}
+
+.page-main__br--with-desktop {
+  @media (min-width: @desktop-width) {
+    display: block;
   }
 }
