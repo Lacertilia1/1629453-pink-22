@@ -1,4 +1,4 @@
-.page__body {
+.body {
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
@@ -15,6 +15,10 @@
 
   background-color: var(--white);
   color: var(--blue);
+
+  @media (min-width: @tablet-width) {
+    min-width: 660px;
+  }
 }
 
 a {
@@ -39,7 +43,7 @@ img {
   }
 }
 
-iframe {
+.contacts__map {
   width: 100%;
   border: none;
 

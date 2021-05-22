@@ -9,8 +9,6 @@
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicon/favicon-32x32.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon/favicon-180x180.png">
-  <link rel="preload" href="img/index__images/back-desktop.jpg" as="image">
-  <link rel="preload" href="img/index__images/back-mobile@2x.jpg" as="image">
   <link rel="preload" href="fonts/open-sans-v18-latin_cyrillic-300.woff2" type="font/woff2" as="font">
   <link rel="preload" href="fonts/opensans.woff2" type="font/woff2" as="font">
   <link rel="preload" href="fonts/opensansbold.woff2" type="font/woff2" as="font">
@@ -19,104 +17,90 @@
   <meta name="keywords" content="пинк, html academy, готовый проект, бесплатно">
 </head>
 
-<body class="page__body">
-  <!-- Header -|- Start -->
-  <header class="page-header page-header--opened">
-    <div class="page-header__desktop-nav-wrapper page-header__desktop-nav-wrapper--opened">
-      <div class="page-header__desktop-wrapper page-header__desktop-wrapper--no-color">
-        <div class="page-header__main-wrapper page-header__main-wrapper--opened">
+<body class="body">
 
-          <a class="page-header__logo" href="#">
-            <div class="page-header__logo-image-wrapper">
+  <header class="page-header page-header--background">
+    <div class="page-header__desktop-container">
 
-              <svg
-                class="page-header__logo-image page-header__logo-image-mobile page-header__logo-image--color page-header__logo-image--mobile-size"
-                width="74" height="23" viewBox="0 0 74 23">
-                <use xlink:href="img/svg/svg-images/sprite.svg#logo"></use>
-              </svg>
+      <div class="page-header__logo-wrapper">
+        <!-- logo -->
+        <a class="page-header__logo" href="index.html">
+          <svg class="page-header__logo-image page-header__logo-image--mobile" width="74" height="23"
+            viewBox="0 0 74 23">
+            <use xlink:href="img/svg/svg-images/sprite.svg#logo"></use>
+          </svg>
 
-              <svg
-                class="page-header__logo-image page-header__logo-image-tablet page-header__logo-image--color page-header__logo-image--tablet-size"
-                width="145" height="40" viewBox="0 0 145 40">
-                <use xlink:href="img/svg/svg-images/sprite.svg#logotype-white-tablet"></use>
-              </svg>
+          <svg class="page-header__logo-image page-header__logo-image--tablet" width="145" height="40"
+            viewBox="0 0 145 40">
+            <use xlink:href="img/svg/svg-images/sprite.svg#logotype-white-tablet"></use>
+          </svg>
 
-              <svg
-                class="page-header__logo-image page-header__logo-image-desktop page-header__logo-image--color page-header__logo-image--desktop-size"
-                width="147" height="40" viewBox="0 0 147 40">
-                <use xlink:href="img/svg/svg-images/sprite.svg#logotype-white-desktop"></use>
-              </svg>
+          <svg class="page-header__logo-image page-header__logo-image--desktop" width="147" height="40"
+            viewBox="0 0 147 40">
+            <use xlink:href="img/svg/svg-images/sprite.svg#logotype-white-desktop"></use>
+          </svg>
+          <span class="page-header__logo-description visually-hidden">Логотип компании Пинк</span>
+        </a>
 
-            </div>
+        <!-- Burger -->
+        <button class="page-header__toggle page-header__toggle--no-js" type="button">
+          <span class="page-header__toggle-item page-header__toggle-item--first">
+            <svg
+              class="page-header__toggle-image page-header__toggle-image--closed-button-size page-header__toggle-image--closed"
+              width="50" height="24" viewBox="0 0 50 24">
+              <use xlink:href="img/svg/svg-images/sprite.svg#open-menu-btn"></use>
+            </svg>
+          </span>
 
-            <span class="page-header__logo-description visually-hidden">Логотип компании Пинк</span>
-          </a>
-          <div class="page-header__toggle-wrapper">
-            <button class="page-header__toggle page-header__toggle--no-js" type="button">
-
-              <span class="page-header__toggle-item page-header__toggle-item--closed page-header__toggle-item--hidden">
-
-                <svg
-                  class="page-header__toggle-image page__header__toggle-image--closed-button-size page-header__toggle-image--closed"
-                  width="50" height="24" viewBox="0 0 50 24">
-                  <use xlink:href="img/svg/svg-images/sprite.svg#open-menu-btn"></use>
-                </svg>
-
-              </span>
-
-              <span class="page-header__toggle-item page-header__toggle-item--opened">
-
-                <svg
-                  class="page-header__toggle-image page-header__toggle-image--opened-button-size page-header__toggle-image--opened"
-                  width="23" height="23" viewBox="0 0 23 23">
-                  <use xlink:href="img/svg/svg-images/sprite.svg#close-menu-btn"></use>
-                </svg>
-              </span>
-              <span class="page-header__toggle-description visually-hidden">Открыть меню</span>
-            </button>
-          </div>
-        </div>
-        <nav class="page-header__navigation page-header__navigation--closed">
-          <div class="page-header__wrapper">
-            <ul class="page-header__list page-header__list--opened">
-              <li class="page-header__item page-header__item--first">
-                <a class="page-header__link" href="index.html">
-                  Главная
-                </a>
-              </li>
-              <li class="page-header__item page-header__item--second">
-                <a class="page-header__link" href="catalog.html">
-                  Фотографии
-                </a>
-              </li>
-              <li class="page-header__item page-header__item--third">
-                <a class="page-header__link page-header__link--active" href="#">
-                  Конкурс
-                </a>
-              </li>
-              <li class="page-header__item page-header__item--fourth">
-                <a class="page-header__link" href="https://htmlacademy.ru/intensive/adaptive">
-                  HTML Academy
-                </a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+          <span class="page-header__toggle-item page-header__toggle-item--second page-header__toggle-item--hidden">
+            <svg
+              class="page-header__toggle-image page-header__toggle-image--opened-button-size page-header__toggle-image--opened"
+              width="23" height="23" viewBox="0 0 23 23">
+              <use xlink:href="img/svg/svg-images/sprite.svg#close-menu-btn"></use>
+            </svg>
+          </span>
+          <span class="page-header__toggle-description visually-hidden">Открыть меню</span>
+        </button>
       </div>
+
+      <ul class="page-header__list">
+        <li class="page-header__item">
+          <a class="page-header__link" href="index.html">
+            Главная
+          </a>
+        </li>
+        <li class="page-header__item">
+          <a class="page-header__link" href="catalog.html">
+            Фотографии
+          </a>
+        </li>
+        <li class="page-header__item">
+          <a class="page-header__link page-header__link--active" href="#">
+            Конкурс
+          </a>
+        </li>
+        <li class="page-header__item">
+          <a class="page-header__link" href="https://htmlacademy.ru/intensive/adaptive">
+            HTML Academy
+          </a>
+        </li>
+      </ul>
+
     </div>
-  </header><!-- Header -|- End -->
+  </header>
 
   <!-- Main -|- Start -->
   <main class="page-main">
-    <div class="page-main__heading-wrapper page-main__heading-wrapper--form">
-      <div class="page-main__container container">
-        <h1 class="page-main__heading">
+
+    <section class="heading">
+      <div class="heading__container">
+        <h1 class="heading__text">
           Конкурс на самое
           безбашенное
           путешествие с Пинк
         </h1>
-      </div><!-- Container -|- End -->
-    </div>
+      </div>
+    </section>
 
     <section class="registration">
       <div class="registration__wrapper">
@@ -133,20 +117,18 @@
           <div class="registration__user-list">
             <div class="registration__user-item">
               <label class="registration__user-input-label" for="second-name">ФАМИЛИЯ:</label>
-              <input
-                class="registration__user-input registration__user-input--second-name registration__user-input--status"
-                type="text" id="second-name" name="second-name" placeholder="Укажите фамилию *">
+              <input class="registration__user-input registration__user-input--second-name" type="text" id="second-name"
+                name="second-name" placeholder="Укажите фамилию *">
             </div>
             <div class="registration__user-item">
               <label class="registration__user-input-label" for="first-name">ИМЯ:</label>
-              <input
-                class="registration__user-input registration__user-input--first-name registration__user-input--status"
-                type="text" id="first-name" name="first-name" placeholder="Введите ваше имя *">
+              <input class="registration__user-input registration__user-input--first-name" type="text" id="first-name"
+                name="first-name" placeholder="Введите ваше имя *">
             </div>
             <div class="registration__user-item">
               <label class="registration__user-input-label" for="patronymic">ОТЧЕСТВО:</label>
-              <input class="registration__user-input registration__user-input--status" type="text" id="patronymic"
-                name="patronymic" placeholder="Ну и отчество тоже">
+              <input class="registration__user-input" type="text" id="patronymic" name="patronymic"
+                placeholder="Ну и отчество тоже">
             </div>
           </div>
 
@@ -222,7 +204,7 @@
 
           <fieldset class="registration__app">
             <div class="registration__app-wrapper">
-              <h3 class="registration_app-list">
+              <h3 class="registration__app-list">
                 С каким приложением
                 путешествовали?
               </h3>
@@ -266,7 +248,7 @@
             <button class="registration__button" type="submit"><span class="registration__button-text">Отправить
                 форму</span></button>
             <p class="registration__required">
-              <span class="registration__required--color">*</span> — обязательные <span
+              <span class="registration__required-text registration__required-text--color">*</span> — обязательные <span
                 class="registration__hidden-text registration__hidden-text--form">для заполнения</span> поля
           </div><!-- Container -|- End -->
         </form>
@@ -275,33 +257,24 @@
   </main><!-- Main -|- End -->
 
   <!-- Footer -|- Start -->
-  <footer class="page-footer page-footer--padding">
+  <footer class="page-footer page-footer--padding page-footer--form-padding">
     <div class="page-footer__wrapper container">
 
       <h2 class="page-footer__heading visually-hidden">Социальные сети и авторские права</h2>
 
-      <div class="page-footer__logo-wrapper">
-        <a href="https://htmlacademy.ru/intensive/adaptive">
+      <a class="page-footer__logo-wrapper" href="https://htmlacademy.ru/intensive/adaptive">
+        <svg
+          class="page-footer__logo page-footer__logo--desktop page-footer__logo--desktop-size page-footer__logo--color"
+          width="147" height="40" viewBox="0 0 147 40">
+          <use xlink:href="img/svg/svg-images/sprite.svg#logotype-pink-desktop"></use>
+        </svg>
 
-          <div class="page-footer__image-logo-wrapper">
-
-            <svg
-              class="page-footer__logo page-footer__logo--desktop page-footer__logo--desktop-size page-footer__logo--color"
-              width="147" height="40" viewBox="0 0 147 40">
-              <use xlink:href="img/svg/svg-images/sprite.svg#logotype-pink-desktop"></use>
-            </svg>
-
-            <svg
-              class="page-footer__logo page-footer__logo--mobile page-footer__logo--mobile-size page-footer__logo--color"
-              width="145" height="40" viewBox="0 0 145 40">
-              <use xlink:href="img/svg/svg-images/sprite.svg#logotype-blue-tablet"></use>
-            </svg>
-
-          </div>
-
-          <span class="page-footer__logo-description visually-hidden">Логотип компании Пинк</span>
-        </a>
-      </div>
+        <svg class="page-footer__logo page-footer__logo--mobile page-footer__logo--mobile-size page-footer__logo--color"
+          width="145" height="40" viewBox="0 0 145 40">
+          <use xlink:href="img/svg/svg-images/sprite.svg#logotype-blue-tablet"></use>
+        </svg>
+        <span class="page-footer__logo-description visually-hidden">Логотип компании Пинк</span>
+      </a>
 
       <ul class="page-footer__list">
         <li class="page-footer__item">
@@ -350,7 +323,7 @@
   </footer><!-- Footer -|- End -->
 
   <!-- Popup -|- Start -->
-  <div class="success-popup popup--hidden">
+  <div class="success-popup popup popup--hidden">
     <div class="success-popup__text-wrapper">
       <h3 class="success-popup__heading">
         Ваша заявка отправлена
@@ -362,12 +335,12 @@
         ее и<br class="success-popup__br">&ensp;оповестим вас.
       </p>
     </div>
-    <div class="success-button__close-button-wrapper">
+    <div class="success-popup__close-button-wrapper">
       <button class="success-popup__close-button" type="button">Закрыть окно</button>
     </div>
   </div>
 
-  <div class="failure-popup popup--hidden">
+  <div class="failure-popup popup popup--hidden">
     <div class="failure-popup__text-wrapper">
       <h3 class="failure-popup__heading">Что-то пошло не так!</h3>
       <p class="failure-popup__text">
@@ -375,8 +348,8 @@
         скорее всего вы забыли их заполнить
       </p>
     </div>
-    <div class="failure-button__close-button-wrapper">
-      <div class="failure-button__button-wrapper">
+    <div class="failure-popup__close-button-wrapper">
+      <div class="failure-popup__button-wrapper">
         <button class="failure-popup__close-button" type="button">Ок</button>
       </div>
     </div>

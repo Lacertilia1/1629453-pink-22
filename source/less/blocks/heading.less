@@ -1,0 +1,69 @@
+// Heading.less
+
+.heading {
+  min-height: 237px;
+  margin-top: -69px;
+
+  background-color: var(--blue);
+  background-image: url("../../img/index__images/back-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/index__images/back-mobile@2x.jpg");
+  }
+
+  @media (min-width: @tablet-width) {
+    min-height: 440px;
+    margin: -109px;
+
+    background-image: url("../../img/index__images/back-tablet.jpg");
+    background-size: auto;
+    background-position: top;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/index__images/back-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 394px;
+
+    background-image: url("../../img/index__images/back-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/index__images/back-desktop@2x.jpg");
+    }
+  }
+}
+
+.heading__container {
+  position: relative;
+  top: 95px;
+
+  .container();
+
+  @media (min-width: @tablet-width) {
+    top: 175px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 170px;
+  }
+}
+
+.heading__text {
+  .no__margin-padding();
+
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 300;
+  text-align: center;
+
+  color: var(--white);
+
+  @media (min-width: @tablet-width) {
+    font-size: 50px;
+    line-height: 68px;
+  }
+}

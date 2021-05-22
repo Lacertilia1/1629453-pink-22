@@ -5,7 +5,7 @@
   margin-bottom: 5px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 91px;
+    padding-top: 200px;
   }
 }
 
@@ -107,20 +107,6 @@
   }
 }
 
-.registration__user-input--status {
-  &:hover {
-    border-color: var(--blue);
-  }
-
-  &:active {
-    border-color: var(--pink);
-  }
-
-  &:focus {
-    border-color: var(--blue);
-  }
-}
-
 .registration__achievements {
   .no__margin-padding();
   padding-bottom: 34px;
@@ -153,6 +139,8 @@
   line-height: 18px;
   text-transform: uppercase;
   text-align: center;
+  font-weight: 400;
+  font-size: 14px;
 
   color: var(--pink);
 
@@ -251,6 +239,8 @@
 .registration__contacts-list {
   display: none;
 
+  font-size: 14px;
+  font-weight: 400;
   line-height: 30px;
   text-transform: uppercase;
   text-align: center;
@@ -308,23 +298,9 @@
   }
 }
 
-.registration__contacts-input--status {
-  &:hover {
-    border-color: var(--blue);
-  }
-
-  &:active {
-    border-color: var(--pink);
-  }
-
-  &:focus {
-    border-color: var(--blue);
-  }
-}
-
 .registration__app {
   .no__margin-padding();
-  padding-top: 39px;
+  padding-top: 26px;
   padding-bottom: 6px;
 
   background-color: var(--grey);
@@ -366,9 +342,11 @@
   }
 }
 
-.registration_app-list {
+.registration__app-list {
   margin-bottom: 35px;
 
+  font-size: 14px;
+  font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
   text-align: center;
@@ -442,6 +420,8 @@
   margin: 0 auto;
   margin-bottom: 17px;
 
+  font-size: 14px;
+  font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
   text-align: center;
@@ -481,6 +461,8 @@
 
   resize: none;
 
+  outline: none;
+
   &::placeholder {
     font-size: 18px;
     line-height: 30px;
@@ -511,7 +493,7 @@
   }
 
   &:focus {
-    border-color: var(--blue);
+    border-color: var(--pink);
   }
 }
 
@@ -528,7 +510,7 @@
   }
 }
 
-.registration__required--color {
+.registration__required-text--color {
   color: var(--pink);
 }
 
@@ -549,7 +531,7 @@
 
   @media (min-width: @tablet-width) {
     width: 300px;
-    height: 63px;
+    min-height: 63px;
   }
 }
 
