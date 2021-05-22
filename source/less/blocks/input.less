@@ -26,6 +26,8 @@
   border: 2px solid var(--light-grey);
   border-radius: 1px;
 
+  outline: none;
+
   &::placeholder {
     font-size: 18px;
     line-height: 30px;
@@ -36,6 +38,16 @@
   @media (min-width: @tablet-width) {
     width: 100%;
   }
+}
+
+.registration__user-input:active {
+  border-color: var(--pink);
+  border-radius: 1px;
+}
+
+.registration__user-input:focus {
+  border-color: var(--pink);
+  border-radius: 1px;
 }
 
 .registration__contacts-input--phone {
@@ -79,6 +91,8 @@
   border: 2px solid var(--light-grey);
   border-radius: 1px;
 
+  outline: none;
+
   &::placeholder {
     font-size: 18px;
     line-height: 30px;
@@ -96,18 +110,16 @@
   }
 }
 
-.registration__user-item:hover .registration__user-input {
-  border-color: var(--blue);
-}
+.registration__contacts-input--status {
+  &:hover {
+    border-color: var(--blue);
+  }
 
-.registration__user-input:active {
-  border-color: var(--pink);
-}
+  &:active {
+    border-color: var(--pink);
+  }
 
-.registration__contacts-item:hover .registration__contacts-input {
-  border-color: var(--blue);
-}
-
-.registration__contacts-input:active {
-  border-color: var(--pink);
+  &:focus {
+    border-color: var(--pink);
+  }
 }

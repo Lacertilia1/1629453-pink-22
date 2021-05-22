@@ -3,7 +3,12 @@
 .radio-button__input {
   position: absolute;
   z-index: -1;
+
   opacity: 0;
+}
+
+.radio-button__input-label {
+  cursor: pointer;
 }
 
 .radio-button__input + .radio-button__input-label {
@@ -32,6 +37,8 @@
   background-size: 50% 50%;
   background-color: var(--white);
 
+  cursor: pointer;
+
   @media (min-width: @tablet-width) {
     margin-right: 20px;
   }
@@ -44,11 +51,15 @@
   background-size: 15px 15px;
 }
 
-.radio-button__input + .radio-button__input-label:hover::before {
+.radio-button__input:hover + .radio-button__input-label::before {
   border-color: var(--blue);
 }
 
-.radio-button__input + .radio-button__input-label:active::before {
+.radio-button__input:active + .radio-button__input-label::before {
+  border-color: var(--pink);
+}
+
+.radio-button__input:focus + .radio-button__input-label::before {
   border-color: var(--pink);
 }
 

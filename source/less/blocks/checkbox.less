@@ -6,6 +6,10 @@
   opacity: 0;
 }
 
+.checkbox__input-label {
+  cursor: pointer;
+}
+
 .checkbox__input + .checkbox__input-label {
   display: inline-flex;
   align-items: center;
@@ -31,6 +35,8 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 50% 50%;
+
+  cursor: pointer;
 }
 
 .checkbox__input:checked + .checkbox__input-label::before {
@@ -39,14 +45,20 @@
 
 // Стили для чекбокса, при наведении
 
-.checkbox__input + .checkbox__input-label:hover::before {
+.checkbox__input:hover + .checkbox__input-label::before {
   border: 2px solid var(--blue);
 }
 
 // Стили для чекбокса, находящегося в состоянии active
 
-.checkbox__input + .checkbox__input-label:active::before {
-  border: 2px solid var(--pink);
+.checkbox__input:active + .checkbox__input-label::before {
+  border-color: var(--pink);
+}
+
+// Стили для чекбокса, находящегося в состоянии focus
+
+.checkbox__input:focus + .checkbox__input-label::before {
+  border-color: var(--pink);
 }
 
 //  Стили для чекбокса, находящегося в состоянии disabled

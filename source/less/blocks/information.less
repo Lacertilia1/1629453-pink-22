@@ -86,6 +86,15 @@
 
 .information__features-list {
   position: relative;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 103px;
+  }
+
+  @media (min-width: @desktop-width) {
+    .no__margin-padding();
+    margin: 0 auto;
+  }
 }
 
 .information__features-list::after {
@@ -125,18 +134,11 @@
   }
 }
 
-.information__features-list-wrapper {
-  @media (min-width: @tablet-width) {
-    padding-top: 103px;
-    padding-left: 310px;
-  }
-
-  @media (min-width: @desktop-width) {
-    .no__margin-padding();
-  }
-}
-
 .information__features-item-flex-wrapper {
+  @media (min-width: @tablet-width) {
+    margin-left: 310px;
+  }
+
   @media (min-width: @desktop-width) {
     display: flex;
     justify-content: space-between;

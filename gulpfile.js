@@ -44,9 +44,9 @@ const html = () => {
 // Scripts
 
 const scripts = () => {
-  return gulp.src(["source/js/header-catalog.js", "source/js/header-form.js", "source/js/header-index.js", "source/js/modal.js"])
+  return gulp.src(["source/js/header-catalog.js", "source/js/header-form.js", "source/js/header-index.js", "source/js/modal.js", "source/js/header.js"])
     .pipe(terser())
-    .pipe(rename(["header-catalog.min.js", "header-form.min.js", "header-index.min.js", "modal.min.js"]))
+    .pipe(rename(["header-catalog.min.js", "header-form.min.js", "header-index.min.js", "modal.min.js", "header.min.js"]))
     .pipe(gulp.dest("build/js"))
     .pipe(sync.stream());
 }
