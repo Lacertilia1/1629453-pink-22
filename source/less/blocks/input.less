@@ -40,6 +40,11 @@
   }
 }
 
+.registration__user-input:hover {
+  border-color: var(--blue);
+  border-radius: 1px;
+}
+
 .registration__user-input:active {
   border-color: var(--pink);
   border-radius: 1px;
@@ -107,19 +112,5 @@
 
   @media (min-width: @desktop-width) {
     width: 350px;
-  }
-}
-
-.registration__contacts-input--status {
-  &:hover {
-    border-color: var(--blue);
-  }
-
-  &:active {
-    border-color: var(--pink);
-  }
-
-  &:focus {
-    border-color: var(--pink);
   }
 }
